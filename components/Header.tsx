@@ -20,13 +20,13 @@ export default function Header() {
             <Link href="/" className="flex items-center justify-between" aria-label="Home">
               <div
                 className={classNames(
-                  'horizontal-underline hidden font-cabinet text-5xl font-extrabold sm:block',
+                  'horizontal-underline hidden font-cabinet text-4xl font-extrabold sm:block',
                   {
                     'horizontal-underline-active': pathName === '/',
                   }
                 )}
               >
-                c.
+                genius.
               </div>
             </Link>
           </div>

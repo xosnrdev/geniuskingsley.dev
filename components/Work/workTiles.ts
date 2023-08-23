@@ -20,7 +20,7 @@ export const workTiles: WorkTile[] = [
   },
   {
     description: 'I worked on',
-    title: 'P2PCoder - WWT',
+    title: 'P2PCoder - WWT Project',
     image: {
       src: '/static/images/p2p.png',
       width: 700,
@@ -38,7 +38,7 @@ export const workTiles: WorkTile[] = [
   },
   {
     description: `I'm working on`,
-    title: 'Annon Chat - WWT',
+    title: 'Annon Chat - WWT Project',
     image: {
       src: '/static/images/annon_chat.png',
       width: 700,

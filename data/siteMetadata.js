@@ -14,7 +14,7 @@ const siteMetadata = {
   github: 'https://github.com/spadechaser',
   twitter: 'https://twitter.com/spadeofchase',
   linkedin: 'https://www.linkedin.com/in/zer0szn/',
-  spotify: 'https://open.spotify.com/user/12162121994?si=e685b3546f414967',
+  spotify: 'https://open.spotify.com/user/31wuvc3q22pqbn7m5smst6jsbxae',
   locale: 'en-US',
   comment: {
     provider: 'giscus',

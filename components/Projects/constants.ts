@@ -2,31 +2,24 @@ import { Project } from './types';
 
 export const projects: Project[] = [
   {
-    title: 'P2PCoder',
-    src: 'planner-app.webp',
+    title: 'P2PCoder -WWT Project',
+    src: 'p2p.png',
     color: '#dbeafe',
-    url: '#',
+    url: 'https://github.com/world-wide-techies/P2PCoder',
     role: 'Software Developer',
   },
   {
     title: 'ThreeJS Shirt Customizer',
-    src: 'field-app.webp',
+    src: 'threejs.png',
     color: '#ddd6fe',
     url: 'https://three.jscodespace.com',
     role: 'Fullstack Developer',
   },
   {
-    title: 'Digithink - Blog',
-    src: 'field-app.webp',
-    color: '#ddd6fe',
-    url: '#',
-    role: 'Fullstack Developer',
-  },
-  {
-    title: 'Annon Chat',
-    src: 'publication-app.webp',
+    title: 'Annon Chat - WWT Project',
+    src: 'annon_chat.png',
     color: '#fae8ff',
-    url: '#',
+    url: 'https://github.com/world-wide-techies/annon_chat',
     role: 'Software Developer',
   },
 ];
