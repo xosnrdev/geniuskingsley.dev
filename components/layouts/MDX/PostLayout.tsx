@@ -45,7 +45,7 @@ export default function PostLayout({ content, children, next, prev }: Props) {
         style={{ gridTemplateRows: 'auto 1fr' }}
       >
         <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:col-span-4 xl:row-span-2 xl:pb-0">
-          <div className="prose max-w-none pt-8 pb-8 text-start font-normal normal-case tracking-normal dark:prose-dark">
+          <div className="prose max-w-none self-stretch pt-8 pb-8 font-normal normal-case tracking-normal dark:prose-dark">
             {children}
             <PostNavigation prev={prev} next={next} />
           </div>

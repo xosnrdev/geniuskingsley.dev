@@ -22,7 +22,7 @@ export default function UsesLayout({ children }: Props) {
           </a>
         </span>
       </div>
-      <div className="prose max-w-none pb-8 text-justify text-sm dark:prose-dark md:text-lg xl:col-span-2">
+      <div className="prose max-w-none self-stretch pb-8 font-normal normal-case tracking-normal dark:prose-dark md:text-lg xl:col-span-2">
         {children}
       </div>
     </div>

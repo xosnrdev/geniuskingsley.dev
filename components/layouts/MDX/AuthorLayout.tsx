@@ -17,7 +17,7 @@ export default function AuthorLayout({ children, content }: Props) {
           <h1 className="font-cabinet text-xl font-extrabold text-blue-600 md:text-3xl lg:text-4xl">
             Chidera Kingsley
           </h1>
-          <h2 className="text-sm font-normal md:text-base">
+          <h2 className="self-stretch text-sm font-normal tracking-normal md:text-base">
             {occupation} <span className="font-semibold">{company}</span>
           </h2>
         </div>
@@ -32,7 +32,7 @@ export default function AuthorLayout({ children, content }: Props) {
           />
         </div>
       </div>
-      <div className="prose max-w-none pb-8 text-start text-base font-normal normal-case tracking-normal dark:prose-dark md:text-lg xl:col-span-2">
+      <div className="prose max-w-none self-stretch pb-8 font-normal normal-case tracking-normal dark:prose-dark md:text-lg xl:col-span-2">
         {children}
       </div>
     </div>
