@@ -13,8 +13,8 @@ export default function RecentPosts({ posts }: RecentPosts) {
 
   return (
     <div className="mt-6">
-      <div className="divide-gray-200 dark:divide-gray-700">
-        <h3 className="font-grotesk text-2xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl sm:leading-10 md:text-4xl md:leading-14">
+      <div className="divide-gray-200 dark:divide-slate-700">
+        <h3 className="font-cabinet text-2xl font-extrabold leading-9 tracking-tight text-slate-900 dark:text-gray-100 sm:text-3xl sm:leading-10 md:text-4xl md:leading-14">
           Recent Posts
         </h3>
         <PostCard posts={slicedPost} showTags={false} />

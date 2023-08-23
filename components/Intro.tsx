@@ -45,7 +45,7 @@ export default function Intro() {
       className="relative z-10 text-clip bg-black text-white dark:bg-white  dark:text-black"
       id="intro"
     >
-      <div className="mx-auto flex min-h-screen max-w-5xl flex-col items-center justify-center px-10 py-24 font-grotesk text-4xl font-bold tracking-tight md:py-28 md:text-6xl lg:px-20 lg:py-3 lg:text-7xl">
+      <div className="mx-auto flex min-h-screen max-w-5xl flex-col items-center justify-center px-10 py-24 font-cabinet text-4xl font-bold tracking-tight md:py-28 md:text-6xl lg:px-20 lg:py-3 lg:text-7xl">
         <div className="leading-[1.15]">
           <div className="introText" style={{ opacity: opacityForBlock(progress, 0) }}>
             I love the art of coding.

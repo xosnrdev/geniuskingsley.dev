@@ -1,6 +1,7 @@
 @import url('https://fonts.cdnfonts.com/css/cabinet-grotesk');
 @import url('https://fonts.cdnfonts.com/css/space-grotesk');
 @import url('https://fonts.cdnfonts.com/css/inter');
+@import url('https://fonts.cdnfonts.com/css/roboto');
 
 @tailwind base;
 @tailwind components;
@@ -16,10 +17,6 @@
 
 html::-webkit-scrollbar {
   display: none;
-}
-
-html {
-  @apply text-clip antialiased;
 }
 
 input:-webkit-autofill,
@@ -102,4 +99,10 @@ input:-webkit-autofill:focus {
 
 [cmdk-empty] {
   @apply flex items-center justify-center py-4 text-sm text-gray-500;
+}
+
+.css-1tzfalu {
+  --tw-gradient-from: #2563eb !important;
+  --tw-gradient-to: #2563eb !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }

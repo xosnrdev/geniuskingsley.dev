@@ -36,11 +36,11 @@ export default function Hero(): ReactElement {
       >
         <div className="mx-auto w-screen max-w-3xl px-4 sm:px-9 xl:max-w-5xl xl:px-0">
           <div className="-mt-36">
-            <div ref={ref} className="flex cursor-default flex-col space-y-2">
-              <h1 className="bg-blue-600 bg-clip-text font-cabinet  text-5xl font-extrabold leading-tight tracking-tighter text-transparent sm:text-center sm:text-5xl sm:text-[4rem] sm:leading-[4.75rem] md:text-6xl lg:text-left xl:text-8xl">
+            <div ref={ref} className="flex cursor-default flex-col space-y-2 text-clip">
+              <h1 className=" bg-blue-600 bg-clip-text font-cabinet text-5xl font-extrabold leading-tight tracking-tighter text-transparent sm:text-center sm:text-5xl sm:text-[4rem] sm:leading-[4.75rem] md:text-6xl lg:text-left xl:text-8xl">
                 Chidera Kingsley
               </h1>
-              <h2 className="text-clip font-space text-2xl font-medium opacity-80 sm:text-4xl md:text-5xl xl:text-6xl">
+              <h2 className="font-space text-2xl font-medium opacity-80 sm:text-4xl md:text-5xl xl:text-6xl">
                 "Crafting for the web",
                 <br /> I blend tradition with digital trends.
               </h2>

@@ -13,8 +13,8 @@ export default function AuthorLayout({ children, content }: Props) {
   return (
     <div className="pt-8">
       <div className="mb-8 flex flex-col-reverse items-center justify-between sm:flex-row sm:items-center">
-        <div className="text-center sm:text-left">
-          <h1 className="text-clip font-cabinet text-xl font-extrabold text-blue-600 md:text-3xl lg:text-4xl">
+        <div className="text-clip text-center sm:text-left">
+          <h1 className="font-cabinet text-xl font-extrabold text-blue-600 md:text-3xl lg:text-4xl">
             Chidera Kingsley
           </h1>
           <h2 className="text-sm font-normal md:text-base">
@@ -32,7 +32,7 @@ export default function AuthorLayout({ children, content }: Props) {
           />
         </div>
       </div>
-      <div className="prose max-w-none pb-8 text-justify text-sm  dark:prose-dark md:text-lg xl:col-span-2">
+      <div className="prose max-w-none pb-8 text-start text-base font-normal normal-case tracking-normal dark:prose-dark md:text-lg xl:col-span-2">
         {children}
       </div>
     </div>
