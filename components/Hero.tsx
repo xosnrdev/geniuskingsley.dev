@@ -6,6 +6,9 @@ import { ReactElement, useContext, useEffect, useRef } from 'react';
 import { HiOutlineArrowNarrowDown } from 'react-icons/hi';
 import { ScrollContext } from './Providers/ScrollProvider';
 import { renderCanvas } from './renderCanvas';
+import siteMetadata from '@/data/siteMetadata';
+import { AiFillLinkedin } from 'react-icons/ai';
+import { FaGithub, FaTwitter } from 'react-icons/fa';
 
 export default function Hero(): ReactElement {
   const ref = useRef<HTMLHeadingElement>(null);
@@ -50,6 +53,40 @@ export default function Hero(): ReactElement {
               >
                 Read more about me &rarr;
               </Link>
+            </div>
+            <div className="mt-2 text-xl">
+              <ul className="sticky flex cursor-pointer items-center space-x-6">
+                <li>
+                  <a
+                    href={siteMetadata.linkedin}
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label="linkedin"
+                  >
+                    <AiFillLinkedin />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href={siteMetadata.github}
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label="github"
+                  >
+                    <FaGithub />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href={siteMetadata.twitter}
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label="twitter"
+                  >
+                    <FaTwitter />
+                  </a>
+                </li>
+              </ul>
             </div>
             <div className="absolute bottom-4 left-1/2 -translate-x-1/2 transform md:bottom-8">
               <div

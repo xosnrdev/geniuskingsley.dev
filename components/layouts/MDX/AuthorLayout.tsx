@@ -12,10 +12,10 @@ export default function AuthorLayout({ children, content }: Props) {
 
   return (
     <div className="pt-8">
-      <div className="mb-8 flex flex-col-reverse items-center justify-between sm:flex-row sm:items-center">
+      <div className="mb-8 flex flex-col-reverse items-center justify-between sm:flex-row">
         <div className="text-clip text-center sm:text-left">
           <h1 className="font-cabinet text-xl font-extrabold text-blue-600 md:text-3xl lg:text-4xl">
-            Chidera Kingsley
+            {name}
           </h1>
           <h2 className="self-stretch text-sm font-normal tracking-normal md:text-base">
             {occupation} <span className="font-semibold">{company}</span>
