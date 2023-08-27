@@ -2,7 +2,6 @@
 
 import { useLenis } from "@studio-freight/react-lenis";
 import { useRef, useState } from "react";
-import { useTheme } from "next-themes";
 
 function opacityForBlock(sectionProgress: number, blockNumber: number) {
   const progress = sectionProgress - blockNumber;
@@ -16,7 +15,7 @@ function opacityForBlock(sectionProgress: number, blockNumber: number) {
 
 export default function Intro() {
   const [scrollY, setScrollY] = useState(0);
-  const { theme, setTheme } = useTheme();
+ 
 
   useLenis(({ scroll }: any) => {
     setScrollY(scroll);
