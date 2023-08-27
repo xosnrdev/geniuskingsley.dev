@@ -18,12 +18,12 @@ export type TopTracks = {
 };
 
 export const nowPlayingEmptyState: NowPlayingSong = {
-  album: '',
-  albumImageUrl: '',
-  artist: '',
+  album: "",
+  albumImageUrl: "",
+  artist: "",
   isPlaying: false,
-  songUrl: '',
-  title: '',
+  songUrl: "",
+  title: "",
 };
 
 export type NowPlayingSong = {

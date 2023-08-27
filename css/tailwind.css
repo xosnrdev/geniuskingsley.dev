@@ -1,7 +1,7 @@
-@import url('https://fonts.cdnfonts.com/css/cabinet-grotesk');
-@import url('https://fonts.cdnfonts.com/css/space-grotesk');
-@import url('https://fonts.cdnfonts.com/css/inter');
-@import url('https://fonts.cdnfonts.com/css/roboto');
+@import url("https://fonts.cdnfonts.com/css/cabinet-grotesk");
+@import url("https://fonts.cdnfonts.com/css/space-grotesk");
+@import url("https://fonts.cdnfonts.com/css/inter");
+@import url("https://fonts.cdnfonts.com/css/roboto");
 
 @tailwind base;
 @tailwind components;
@@ -90,7 +90,7 @@ input:-webkit-autofill:focus {
   ease-in dark:text-gray-200;
 }
 
-[cmdk-item][aria-selected='true'] {
+[cmdk-item][aria-selected="true"] {
   @apply bg-gray-200 dark:bg-neutral-800;
 }
 
