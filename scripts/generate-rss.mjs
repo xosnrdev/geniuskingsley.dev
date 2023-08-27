@@ -5,9 +5,9 @@ import { escape } from "./htmlEscaper.mjs";
 import siteMetadata from "../data/siteMetadata.js";
 import { allBlogs } from "../.contentlayer/generated/index.mjs";
 
+const slugger = new GithubSlugger();
 export async function getAllTags() {
   const tagCount = {};
-  const slugger = new GithubSlugger();
   // Iterate through each post, putting all found tags into `tags`
   allBlogs.forEach((file) => {
     if (file.tags && file.draft !== true) {
@@ -65,9 +65,7 @@ async function generate() {
   if (allBlogs.length > 0) {
     const tags = await getAllTags();
     for (const tag of Object.keys(tags)) {
-      const filteredPosts = allBlogs.filter(
-        (post) => post.draft !== true && post.tags.map((t) => GithubSlugger.slug(t)).includes(tag)
-      );
+      const filteredPosts = allBlogs.filter(post.tags.map((t) => slugger.slug(t)).includes(tag));
       const rss = generateRss(filteredPosts, `tags/${tag}/feed.xml`);
       const rssPath = path.join("public", "tags", tag);
       mkdirSync(rssPath, { recursive: true });
