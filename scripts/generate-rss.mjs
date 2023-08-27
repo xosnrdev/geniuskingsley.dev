@@ -65,7 +65,9 @@ async function generate() {
   if (allBlogs.length > 0) {
     const tags = await getAllTags();
     for (const tag of Object.keys(tags)) {
-      const filteredPosts = allBlogs.filter(post.tags.map((t) => slugger.slug(t)).includes(tag));
+      const filteredPosts = allBlogs.filter((post) =>
+        post.tags.map((t) => slugger.slug(t)).includes(tag)
+      );
       const rss = generateRss(filteredPosts, `tags/${tag}/feed.xml`);
       const rssPath = path.join("public", "tags", tag);
       mkdirSync(rssPath, { recursive: true });
