@@ -8,7 +8,7 @@ interface RecentPosts {
   posts: Omit<Blog, 'body' | '_raw' | '_id'>[];
 }
 
-export default function RecentPosts({ posts }: RecentPosts) {
+export default function RecentPosts({ posts = [] }: RecentPosts) {
   const slicedPost = posts.slice(0, MAX_DISPLAY);
 
   return (

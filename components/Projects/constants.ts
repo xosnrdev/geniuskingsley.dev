@@ -2,7 +2,7 @@ import { Project } from './types';
 
 export const projects: Project[] = [
   {
-    title: 'P2PCoder -WWT Project',
+    title: 'P2PCoder - WWT Project',
     src: 'p2p.png',
     color: '#dbeafe',
     url: 'https://github.com/world-wide-techies/P2PCoder',
