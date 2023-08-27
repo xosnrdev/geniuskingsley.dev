@@ -11,7 +11,7 @@
     "serve": "next start",
     "lint": "next lint --fix --dir pages --dir components --dir lib --dir layouts --dir scripts",
     "prepare": "husky install",
-    "format": "prettier --write '**/*.{js,jsx,ts,tsx,json,css,scss,md,html,mdx}'"
+    "format": "prettier --write '**/*.{js,jsx,ts,tsx,json,css,scss,md,html,mdx,mjs}'"
   },
   "dependencies": {
     "@dlarroder/playground": "1.10.0",
