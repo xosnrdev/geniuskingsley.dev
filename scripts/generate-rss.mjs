@@ -46,7 +46,7 @@ const generateRss = (posts, page = "feed.xml") => `
       <language>${siteMetadata.language}</language>
       <managingEditor>${siteMetadata.email} (${siteMetadata.author})</managingEditor>
       <webMaster>${siteMetadata.email} (${siteMetadata.author})</webMaster>
-      <lastBuildDate>${new Date(posts[0].date).toUTCString()}</lastBuildDate>
+      <lastBuildDate>${new Date(posts[0]?.date ?? new Date()).toUTCString()}</lastBuildDate>
       <atom:link href="${siteMetadata.siteUrl}/${page}" rel="self" type="application/rss+xml"/>
       ${posts.map(generateRssItem).join("")}
     </channel>
@@ -68,6 +68,7 @@ async function generate() {
       const filteredPosts = allBlogs.filter((post) =>
         post.tags.map((t) => slugger.slug(t)).includes(tag)
       );
+
       const rss = generateRss(filteredPosts, `tags/${tag}/feed.xml`);
       const rssPath = path.join("public", "tags", tag);
       mkdirSync(rssPath, { recursive: true });
