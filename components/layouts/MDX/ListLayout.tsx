@@ -1,10 +1,10 @@
-'use client';
+"use client";
 
-import Pagination from '@/components/Pagination';
-import PostCard from '@/components/PostCard';
-import { CoreContent } from '@/lib/utils/contentlayer';
-import type { Blog } from 'contentlayer/generated';
-import { ComponentProps, useState } from 'react';
+import Pagination from "@/components/Pagination";
+import PostCard from "@/components/PostCard";
+import { CoreContent } from "@/lib/utils/contentlayer";
+import type { Blog } from "contentlayer/generated";
+import { ComponentProps, useState } from "react";
 
 interface Props {
   posts: CoreContent<Blog>[];
@@ -14,9 +14,9 @@ interface Props {
 }
 
 export default function ListLayout({ posts, title, initialDisplayPosts = [], pagination }: Props) {
-  const [searchValue, setSearchValue] = useState('');
+  const [searchValue, setSearchValue] = useState("");
   const filteredBlogPosts = posts.filter((post) => {
-    const searchContent = post.title + post.summary + post.tags?.join(' ');
+    const searchContent = post.title + post.summary + post.tags?.join(" ");
     return searchContent.toLowerCase().includes(searchValue.toLowerCase());
   });
 

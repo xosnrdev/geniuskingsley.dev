@@ -1,9 +1,9 @@
-import Link from '@/components/Link';
-import Tag from '@/components/Tag';
-import MainLayout from '@/layouts/MainLayout';
-import { getAllTags } from '@/lib/utils/contentlayer';
-import kebabCase from '@/lib/utils/kebabCase';
-import { allBlogs } from 'contentlayer/generated';
+import Link from "@/components/Link";
+import Tag from "@/components/Tag";
+import MainLayout from "@/layouts/MainLayout";
+import { getAllTags } from "@/lib/utils/contentlayer";
+import kebabCase from "@/lib/utils/kebabCase";
+import { allBlogs } from "contentlayer/generated";
 
 export default function Tags() {
   const tags = getAllTags(allBlogs);
@@ -17,7 +17,7 @@ export default function Tags() {
         </h1>
       </div>
       <div className="flex flex-wrap gap-3">
-        {Object.keys(tags).length === 0 && 'No tags found.'}
+        {Object.keys(tags).length === 0 && "No tags found."}
         {sortedTags.map((t) => {
           return (
             <div key={t} className="mb-5 flex items-center">

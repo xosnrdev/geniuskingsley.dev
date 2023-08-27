@@ -1,4 +1,4 @@
-import { Song } from './types';
+import { Song } from "./types";
 
 interface TrackProps {
   ranking: number;

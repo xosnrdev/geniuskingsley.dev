@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import { cloneElement, useContext } from 'react';
-import { TileContext } from './TileContext';
+import { cloneElement, useContext } from "react";
+import { TileContext } from "./TileContext";
 
 interface TileProps {
   page: number;
@@ -21,7 +21,7 @@ export const Tile = ({ page, children }: TileProps) => {
   return (
     <div
       className="absolute top-0 w-full"
-      style={{ opacity, pointerEvents: progress >= 0 || progress >= 1 ? 'none' : undefined }}
+      style={{ opacity, pointerEvents: progress >= 0 || progress >= 1 ? "none" : undefined }}
     >
       {cloneElement(children, {
         progress: progress,

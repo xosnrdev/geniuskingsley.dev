@@ -1,6 +1,6 @@
-import { getNowPlaying } from '@/lib/spotify';
-import AnimatedBars from './AnimatedBars';
-import { Artist, NowPlayingSong } from './types';
+import { getNowPlaying } from "@/lib/spotify";
+import AnimatedBars from "./AnimatedBars";
+import { Artist, NowPlayingSong } from "./types";
 
 async function fetchNowPlaying(): Promise<NowPlayingSong | null> {
   try {
@@ -13,7 +13,7 @@ async function fetchNowPlaying(): Promise<NowPlayingSong | null> {
     const song = await response.json();
     const isPlaying = song.is_playing;
     const title = song.item.name;
-    const artist = song.item.artists.map((artist: Artist) => artist.name).join(', ');
+    const artist = song.item.artists.map((artist: Artist) => artist.name).join(", ");
     const album = song.item.album.name;
     const albumImageUrl = song.item.album.images[0].url;
     const songUrl = song.item.external_urls.spotify;
@@ -49,7 +49,7 @@ export default async function NowPlaying() {
         </svg>
         <div className="inline-flex space-x-1">
           <p className="font-medium text-gray-800 dark:text-gray-200">Not Playing</p>
-          <span className="text-gray-500 dark:text-gray-300">{' – '}</span>
+          <span className="text-gray-500 dark:text-gray-300">{" – "}</span>
           <p className="text-gray-500 dark:text-gray-300">Spotify</p>
         </div>
       </div>
@@ -68,7 +68,7 @@ export default async function NowPlaying() {
         >
           {nowPlaying.title}
         </a>
-        <span className="mx-2 text-gray-500 dark:text-gray-300">{' – '}</span>
+        <span className="mx-2 text-gray-500 dark:text-gray-300">{" – "}</span>
         <p className="inline-block truncate text-gray-500 dark:text-gray-300">
           {nowPlaying.artist}
         </p>

@@ -1,13 +1,13 @@
-import ListLayout from '@/layouts/MDX/ListLayout';
-import MainLayout from '@/layouts/MainLayout';
-import { sortedBlogPost } from '@/lib/utils/contentlayer';
-import { POSTS_PER_PAGE } from '@/types/default';
-import { allBlogs } from 'contentlayer/generated';
-import { redirect } from 'next/navigation';
+import ListLayout from "@/layouts/MDX/ListLayout";
+import MainLayout from "@/layouts/MainLayout";
+import { sortedBlogPost } from "@/lib/utils/contentlayer";
+import { POSTS_PER_PAGE } from "@/types/default";
+import { allBlogs } from "contentlayer/generated";
+import { redirect } from "next/navigation";
 
 export const metadata = {
-  title: 'Blog - Chidera Kingsley',
-  description: 'My Blogs - Chidera Kingsley',
+  title: "Blog - Chidera Kingsley",
+  description: "My Blogs - Chidera Kingsley",
 };
 
 export default function BlogPage({ params }: { params: { page: string } }) {
@@ -25,7 +25,7 @@ export default function BlogPage({ params }: { params: { page: string } }) {
   };
 
   if (pageNumber > totalPages) {
-    redirect('/blog');
+    redirect("/blog");
   }
 
   return (

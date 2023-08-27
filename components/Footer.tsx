@@ -1,10 +1,10 @@
-import siteMetadata from '@/data/siteMetadata';
-import Link from 'next/link';
-import { Suspense } from 'react';
-import { AiFillLinkedin } from 'react-icons/ai';
-import { FaGithub, FaTwitter } from 'react-icons/fa';
-import SectionContainer from './SectionContainer';
-import NowPlaying from './Spotify/NowPlaying';
+import siteMetadata from "@/data/siteMetadata";
+import Link from "next/link";
+import { Suspense } from "react";
+import { AiFillLinkedin } from "react-icons/ai";
+import { FaGithub, FaTwitter } from "react-icons/fa";
+import SectionContainer from "./SectionContainer";
+import NowPlaying from "./Spotify/NowPlaying";
 
 export default function Footer() {
   return (

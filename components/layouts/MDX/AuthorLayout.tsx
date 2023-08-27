@@ -1,10 +1,10 @@
-import Image from '@/components/Image';
-import type { Authors } from 'contentlayer/generated';
-import { ReactNode } from 'react';
+import Image from "@/components/Image";
+import type { Authors } from "contentlayer/generated";
+import { ReactNode } from "react";
 
 interface Props {
   children: ReactNode;
-  content: Omit<Authors, '_id' | '_raw' | 'body'>;
+  content: Omit<Authors, "_id" | "_raw" | "body">;
 }
 
 export default function AuthorLayout({ children, content }: Props) {
@@ -26,7 +26,7 @@ export default function AuthorLayout({ children, content }: Props) {
             alt="Chidera Kingsley"
             height={130}
             width={130}
-            src={avatar || ''}
+            src={avatar || ""}
             className="static rounded-full object-scale-down grayscale"
           />
         </div>

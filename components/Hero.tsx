@@ -1,14 +1,14 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
-import Link from 'next/link';
-import { ReactElement, useContext, useEffect, useRef } from 'react';
-import { HiOutlineArrowNarrowDown } from 'react-icons/hi';
-import { ScrollContext } from './Providers/ScrollProvider';
-import { renderCanvas } from './renderCanvas';
-import siteMetadata from '@/data/siteMetadata';
-import { AiFillLinkedin } from 'react-icons/ai';
-import { FaGithub, FaTwitter } from 'react-icons/fa';
+import { motion } from "framer-motion";
+import Link from "next/link";
+import { ReactElement, useContext, useEffect, useRef } from "react";
+import { HiOutlineArrowNarrowDown } from "react-icons/hi";
+import { ScrollContext } from "./Providers/ScrollProvider";
+import { renderCanvas } from "./renderCanvas";
+import siteMetadata from "@/data/siteMetadata";
+import { AiFillLinkedin } from "react-icons/ai";
+import { FaGithub, FaTwitter } from "react-icons/fa";
 
 export default function Hero(): ReactElement {
   const ref = useRef<HTMLHeadingElement>(null);
@@ -35,7 +35,7 @@ export default function Hero(): ReactElement {
         animate={{
           transform: `translateY(${progress * 20}vh)`,
         }}
-        transition={{ type: 'spring', stiffness: 50 }}
+        transition={{ type: "spring", stiffness: 50 }}
       >
         <div className="mx-auto w-screen max-w-3xl px-4 sm:px-9 xl:max-w-5xl xl:px-0">
           <div className="-mt-36">
@@ -93,9 +93,9 @@ export default function Hero(): ReactElement {
                 role="presentation"
                 className="flex cursor-pointer flex-col items-center justify-center"
                 onClick={() => {
-                  const intro = document.querySelector('#intro');
+                  const intro = document.querySelector("#intro");
 
-                  intro?.scrollIntoView({ behavior: 'smooth' });
+                  intro?.scrollIntoView({ behavior: "smooth" });
                 }}
               >
                 <HiOutlineArrowNarrowDown size={20} />

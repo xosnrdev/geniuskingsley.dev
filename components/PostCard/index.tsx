@@ -1,9 +1,9 @@
-import { PostCardProps } from '@/components/PostCard/PostCard';
-import dynamic from 'next/dynamic';
+import { PostCardProps } from "@/components/PostCard/PostCard";
+import dynamic from "next/dynamic";
 
 const PostCardComponent = dynamic(
   () => {
-    return import('./PostCard');
+    return import("./PostCard");
   },
   { ssr: false }
 );

@@ -1,4 +1,4 @@
-import { WorkProps } from './WorkRight';
+import { WorkProps } from "./WorkRight";
 
 export function WorkLeft({ children, progress }: WorkProps) {
   let translateY = Math.max(0, 50 - progress * 3 * 50);

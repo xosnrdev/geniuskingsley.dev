@@ -1,13 +1,13 @@
-'use client';
+"use client";
 
-import headerNavLinks from '@/data/headerNavLinks';
-import classNames from 'classnames';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import CommandPalette from './CommandPalette/CommandPalette';
-import MobileNav from './MobileNav';
-import SectionContainer from './SectionContainer';
-import ThemeSwitch from './ThemeSwitch';
+import headerNavLinks from "@/data/headerNavLinks";
+import classNames from "classnames";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import CommandPalette from "./CommandPalette/CommandPalette";
+import MobileNav from "./MobileNav";
+import SectionContainer from "./SectionContainer";
+import ThemeSwitch from "./ThemeSwitch";
 
 export default function Header() {
   const pathName = usePathname();
@@ -23,8 +23,8 @@ export default function Header() {
               aria-label="Home"
             >
               <div
-                className={classNames('horizontal-underline hidden font-extrabold sm:block', {
-                  'horizontal-underline-active': pathName === '/',
+                className={classNames("horizontal-underline hidden font-extrabold sm:block", {
+                  "horizontal-underline-active": pathName === "/",
                 })}
               >
                 g.
@@ -40,8 +40,8 @@ export default function Header() {
                     prefetch
                     key={title}
                     href={href}
-                    className={classNames('horizontal-underline text-base', {
-                      'horizontal-underline-active': active,
+                    className={classNames("horizontal-underline text-base", {
+                      "horizontal-underline-active": active,
                     })}
                     aria-label={title}
                   >

@@ -1,12 +1,12 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
-import { useState } from 'react';
-import useBreakpoint from 'use-breakpoint';
-import ProjectItem from './ProjectItem';
-import ProjectPreview from './ProjectPreview';
-import { projects } from './constants';
-import { ProjectModal } from './types';
+import { motion } from "framer-motion";
+import { useState } from "react";
+import useBreakpoint from "use-breakpoint";
+import ProjectItem from "./ProjectItem";
+import ProjectPreview from "./ProjectPreview";
+import { projects } from "./constants";
+import { ProjectModal } from "./types";
 
 const BREAKPOINTS = { mobile: 0, tablet: 768, desktop: 1280 };
 
@@ -32,7 +32,7 @@ export default function Projects() {
           />
         </motion.div>
       ))}
-      {breakpoint === 'desktop' && <ProjectPreview modal={modal} projects={projects} />}
+      {breakpoint === "desktop" && <ProjectPreview modal={modal} projects={projects} />}
     </>
   );
 }

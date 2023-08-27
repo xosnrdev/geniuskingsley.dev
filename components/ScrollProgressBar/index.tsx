@@ -1,8 +1,8 @@
-import dynamic from 'next/dynamic';
+import dynamic from "next/dynamic";
 
 const ScrollProgressBarComponent = dynamic(
   () => {
-    return import('./ScrollProgressBar');
+    return import("./ScrollProgressBar");
   },
   { ssr: false }
 );

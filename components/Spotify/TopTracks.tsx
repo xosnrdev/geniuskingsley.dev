@@ -1,6 +1,6 @@
-import { getTopTracks } from '@/lib/spotify';
-import Track from './Track';
-import { Song, TrackInfo } from './types';
+import { getTopTracks } from "@/lib/spotify";
+import Track from "./Track";
+import { Song, TrackInfo } from "./types";
 
 async function fetchTopTracks(): Promise<Song[] | null> {
   try {
@@ -8,7 +8,7 @@ async function fetchTopTracks(): Promise<Song[] | null> {
     const { items } = await response.json();
 
     const tracks = items.slice(0, 5).map((track: TrackInfo) => ({
-      artist: track.artists.map((_artist) => _artist.name).join(', '),
+      artist: track.artists.map((_artist) => _artist.name).join(", "),
       songUrl: track.external_urls.spotify,
       title: track.name,
     }));

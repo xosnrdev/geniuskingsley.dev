@@ -1,5 +1,5 @@
-import { BlogLink } from '@/lib/utils/contentlayer';
-import Link from 'next/link';
+import { BlogLink } from "@/lib/utils/contentlayer";
+import Link from "next/link";
 
 interface PostNavigationProps {
   prev?: BlogLink;

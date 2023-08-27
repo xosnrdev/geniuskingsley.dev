@@ -1,16 +1,16 @@
-import '@/css/prism.css';
-import '@/css/tailwind.css';
+import "@/css/prism.css";
+import "@/css/tailwind.css";
 
-import Analytics from '@/components/Analytics';
-import Footer from '@/components/Footer';
-import Header from '@/components/Header';
-import LogRocket from '@/components/LogRocket';
-import LenisProvider from '@/components/Providers/LenisProvider';
-import ThemeProvider from '@/components/Providers/ThemeProvider';
+import Analytics from "@/components/Analytics";
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+import LogRocket from "@/components/LogRocket";
+import LenisProvider from "@/components/Providers/LenisProvider";
+import ThemeProvider from "@/components/Providers/ThemeProvider";
 
 export const metadata = {
-  title: 'Chidera Kingsley',
-  description: 'I build things for the web.',
+  title: "Chidera Kingsley",
+  description: "I build things for the web.",
 };
 
 interface RootLayoutProps {

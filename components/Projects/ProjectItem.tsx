@@ -1,4 +1,4 @@
-import { ProjectModal } from './types';
+import { ProjectModal } from "./types";
 
 interface ProjectProps {
   index: number;

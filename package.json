@@ -10,7 +10,8 @@
     "rss": "cross-env NODE_OPTIONS='--experimental-json-modules' node ./scripts/generate-rss.mjs",
     "serve": "next start",
     "lint": "next lint --fix --dir pages --dir components --dir lib --dir layouts --dir scripts",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "format": "prettier --write '**/*.{js,jsx,ts,tsx,json,css,scss,md,html,mdx}'"
   },
   "dependencies": {
     "@dlarroder/playground": "1.10.0",

@@ -1,5 +1,5 @@
-import { Command } from 'cmdk';
-import { ReactNode, useCallback } from 'react';
+import { Command } from "cmdk";
+import { ReactNode, useCallback } from "react";
 
 interface CommandItemProps {
   id: string;

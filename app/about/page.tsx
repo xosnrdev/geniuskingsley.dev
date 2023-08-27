@@ -1,15 +1,15 @@
-import { MDXLayoutRenderer } from '@/components/MDXComponents';
-import AuthorLayout from '@/layouts/MDX/AuthorLayout';
-import MainLayout from '@/layouts/MainLayout';
-import { allAuthors } from 'contentlayer/generated';
+import { MDXLayoutRenderer } from "@/components/MDXComponents";
+import AuthorLayout from "@/layouts/MDX/AuthorLayout";
+import MainLayout from "@/layouts/MainLayout";
+import { allAuthors } from "contentlayer/generated";
 
 export const metadata = {
-  title: 'About - Chidera Kingsley',
-  description: 'About me - Chidera Kingsley',
+  title: "About - Chidera Kingsley",
+  description: "About me - Chidera Kingsley",
 };
 
 export default function About() {
-  const author = allAuthors.find((p) => p.slug === 'about');
+  const author = allAuthors.find((p) => p.slug === "about");
 
   if (!author) {
     return null;

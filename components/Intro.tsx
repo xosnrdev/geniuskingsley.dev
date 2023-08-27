@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import { useLenis } from '@studio-freight/react-lenis';
-import { useRef, useState } from 'react';
-import { useTheme } from 'next-themes';
+import { useLenis } from "@studio-freight/react-lenis";
+import { useRef, useState } from "react";
+import { useTheme } from "next-themes";
 
 function opacityForBlock(sectionProgress: number, blockNumber: number) {
   const progress = sectionProgress - blockNumber;
