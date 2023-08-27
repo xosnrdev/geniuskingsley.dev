@@ -9,8 +9,6 @@
     "sitemap": "cross-env NODE_OPTIONS='--experimental-json-modules' node ./scripts/generate-sitemap.mjs",
     "rss": "cross-env NODE_OPTIONS='--experimental-json-modules' node ./scripts/generate-rss.mjs",
     "serve": "next start",
-    "lint": "next lint --fix --dir pages --dir components --dir lib --dir layouts --dir scripts",
-    "prepare": "husky install",
     "format": "prettier --write \"**/*.{js,jsx,ts,css}\""
   },
   "dependencies": {
@@ -60,22 +58,12 @@
     "eslint-plugin-prettier": "5.0.0",
     "file-loader": "6.2.0",
     "globby": "13.2.2",
-    "husky": "8.0.3",
     "inquirer": "9.2.10",
-    "lint-staged": "14.0.1",
     "postcss": "8.4.28",
     "prettier": "3.0.2",
     "prettier-plugin-tailwindcss": "0.5.3",
     "tailwind-scrollbar": "3.0.5",
     "tailwindcss": "3.3.3",
     "typescript": "5.2.2"
-  },
-  "lint-staged": {
-    "*.+(js|jsx|ts|tsx)": [
-      "eslint --fix"
-    ],
-    "*.+(js|jsx|ts|tsx|json|css|md|mdx)": [
-      "prettier --write"
-    ]
   }
 }
