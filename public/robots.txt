@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://geniuskingsley.dev/sitemap.xml
+Sitemap: https://www.geniuskingsley.dev/sitemap.xml 

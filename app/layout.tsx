@@ -9,8 +9,13 @@ import LenisProvider from "@/components/Providers/LenisProvider";
 import ThemeProvider from "@/components/Providers/ThemeProvider";
 
 export const metadata = {
-  title: "Chidera Kingsley",
-  description: "I build things for the web.",
+  metadataBase: new URL("https://www.geniuskingsley.dev/"),
+  title: {
+    default: "Chidera Kingsley",
+    template: `%s | Chidera Kingsley`,
+  },
+  description:
+    "Explore my UI refactoring skills & intuitive problem-solving experiences with JavaScript.",
 };
 
 interface RootLayoutProps {
