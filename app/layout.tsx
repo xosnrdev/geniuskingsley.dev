@@ -7,15 +7,44 @@ import Header from "@/components/Header";
 import LogRocket from "@/components/LogRocket";
 import LenisProvider from "@/components/Providers/LenisProvider";
 import ThemeProvider from "@/components/Providers/ThemeProvider";
+import { Metadata } from "next";
+import siteMetadata from "@/data/siteMetadata";
 
-export const metadata = {
+export const metadata: Metadata = {
   metadataBase: new URL("https://www.geniuskingsley.dev/"),
   title: {
-    default: "Chidera Kingsley",
-    template: `%s | Chidera Kingsley`,
+    default: `${siteMetadata.title}`,
+    template: `%s | ${siteMetadata.title}`,
   },
   description:
     "Explore my UI refactoring skills & intuitive problem-solving experiences with JavaScript.",
+  verification: {
+    google: "google",
+  },
+  openGraph: {
+    title: `${siteMetadata.title}`,
+    description:
+      "Explore my UI refactoring skills & intuitive problem-solving experiences with JavaScript.",
+    url: ``,
+    siteName: `${siteMetadata.title}`,
+    images: [
+      {
+        url: "/static/image/opengraph.png",
+        width: 1200,
+        height: 630,
+        alt: "openGraph image",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  alternates: {
+    canonical: ``,
+    languages: {
+      "en-US": `/en-US`,
+      "de-DE": `/de-DE`,
+    },
+  },
 };
 
 interface RootLayoutProps {
