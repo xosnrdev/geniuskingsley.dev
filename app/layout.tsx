@@ -19,31 +19,7 @@ export const metadata: Metadata = {
   description:
     "Explore my UI refactoring skills & intuitive problem-solving experiences with JavaScript.",
   verification: {
-    google: "google",
-  },
-  openGraph: {
-    title: `${siteMetadata.title}`,
-    description:
-      "Explore my UI refactoring skills & intuitive problem-solving experiences with JavaScript.",
-    url: ``,
-    siteName: `${siteMetadata.title}`,
-    images: [
-      {
-        url: "/static/image/opengraph.png",
-        width: 1200,
-        height: 630,
-        alt: "openGraph image",
-      },
-    ],
-    locale: "en_US",
-    type: "website",
-  },
-  alternates: {
-    canonical: ``,
-    languages: {
-      "en-US": `/en-US`,
-      "de-DE": `/de-DE`,
-    },
+    google: "google-site-verification=sQQwR0g7vJR_SoOwiGlRmYPPgZApAJWJlAuyKuaAYYI",
   },
 };
 

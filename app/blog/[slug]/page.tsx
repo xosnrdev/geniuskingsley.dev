@@ -16,12 +16,22 @@ export async function generateMetadata({
   const post = allBlogs.find((p) => p.slug === slug);
 
   if (!post) {
-    return {};
+    return {
+      title: "Not Found",
+      description: "Sorry we couldn't find this page.",
+    };
   }
 
   return {
     title: post.title,
     description: post.summary,
+    alternates: {
+      canonical: `/${post.slug}`,
+      languages: {
+        "en-US": `/en-US/${post.slug}`,
+        "de-DE": `/de-DE/${post.slug}`,
+      },
+    },
   };
 }
 
