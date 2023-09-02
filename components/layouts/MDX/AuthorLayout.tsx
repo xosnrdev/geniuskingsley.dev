@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "@/components/Image";
 import type { Authors } from "contentlayer/generated";
 import { ReactNode } from "react";
@@ -17,8 +19,8 @@ export default function AuthorLayout({ children, content }: Props) {
           <h1 className="font-cabinet text-xl font-extrabold text-blue-600 md:text-3xl lg:text-4xl">
             {name}
           </h1>
-          <h2 className="self-stretch text-sm font-normal tracking-normal md:text-base">
-            {occupation} <span className="font-semibold">{company}</span>
+          <h2 className="self-stretch text-sm capitalize font-normal tracking-normal md:text-base">
+            {occupation} <span className="font-semibold font-cabinet">{company}</span>
           </h2>
         </div>
         <div className="rounded-full border-4 border-blue-600">
@@ -27,7 +29,9 @@ export default function AuthorLayout({ children, content }: Props) {
             height={130}
             width={130}
             src={avatar || ""}
-            className="static rounded-full object-scale-down grayscale"
+            className="rounded-full object-scale-down grayscale"
+            draggable="false"
+            onContextMenu={(e) => e.preventDefault()}
           />
         </div>
       </div>

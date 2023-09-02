@@ -47,9 +47,10 @@ export default function Hero(): ReactElement {
                 "Crafting for the web",
                 <br /> I blend tradition with digital trends.
               </h2>
+
               <Link
                 href="/about"
-                className="underline-magical text-md w-max cursor-pointer font-space sm:text-lg md:text-xl xl:text-2xl"
+                className="underline-magical text-md w-max cursor-pointer sm:text-lg md:text-xl xl:text-xl"
               >
                 Read more about me &rarr;
               </Link>
@@ -87,6 +88,17 @@ export default function Hero(): ReactElement {
                   </a>
                 </li>
               </ul>
+            </div>
+            <div className="mt-8 hidden lg:block text-clip">
+              <span className="text-sm">Press</span>{" "}
+              <span className="rounded-md bg-gray-300 p-1 text-sm dark:bg-gray-400 text-slate-900">
+                ⌘
+              </span>{" "}
+              <span className="text-sm">+ </span>
+              <span className="rounded-md bg-gray-300 p-1 text-sm dark:bg-gray-400 text-slate-900">
+                K
+              </span>{" "}
+              <span className="text-sm">to start</span>
             </div>
             <div className="absolute bottom-4 left-1/2 -translate-x-1/2 transform md:bottom-8">
               <div
