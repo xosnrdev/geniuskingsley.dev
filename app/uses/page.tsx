@@ -4,8 +4,8 @@ import MainLayout from "@/layouts/MainLayout";
 import { allAuthors } from "contentlayer/generated";
 
 export const metadata = {
-  title: "Uses - Chidera Kingsley",
-  description: "What I Use - Chidera Kingsley",
+  title: "Uses",
+  description: "My productivity tools",
 };
 
 export default function Uses() {

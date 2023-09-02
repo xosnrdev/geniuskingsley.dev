@@ -4,8 +4,8 @@ import MainLayout from "@/layouts/MainLayout";
 import { allAuthors } from "contentlayer/generated";
 
 export const metadata = {
-  title: "About - Chidera Kingsley",
-  description: "About me - Chidera Kingsley",
+  title: "About",
+  description: "Discover my journey, passions, and experiences",
 };
 
 export default function About() {

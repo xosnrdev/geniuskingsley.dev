@@ -2,8 +2,8 @@ import Projects from "@/components/Projects/Projects";
 import MainLayout from "@/layouts/MainLayout";
 
 export const metadata = {
-  title: "Projects - Chidera Kingsley",
-  description: "My Projects - Chidera Kingsley",
+  title: "Projects",
+  description: "Showcase of my software creations.",
 };
 
 export default function Page() {
