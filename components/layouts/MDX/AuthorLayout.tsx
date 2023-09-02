@@ -19,8 +19,8 @@ export default function AuthorLayout({ children, content }: Props) {
           <h1 className="font-cabinet text-xl font-extrabold text-blue-600 md:text-3xl lg:text-4xl">
             {name}
           </h1>
-          <h2 className="self-stretch text-sm capitalize font-normal tracking-normal md:text-base">
-            {occupation} <span className="font-semibold font-cabinet">{company}</span>
+          <h2 className="self-stretch text-sm font-normal capitalize tracking-normal md:text-base">
+            {occupation} <span className="font-cabinet font-semibold">{company}</span>
           </h2>
         </div>
         <div className="rounded-full border-4 border-blue-600">

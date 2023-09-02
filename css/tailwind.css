@@ -21,16 +21,14 @@ html::-webkit-scrollbar {
 
 input:-webkit-autofill,
 input:-webkit-autofill:focus {
-  transition:
-    background-color 600000s 0s,
-    color 600000s 0s;
+  transition: background-color 600000s 0s, color 600000s 0s;
 }
 
 .underline-magical {
   @apply bg-gradient-to-r from-primary-500 to-primary-500 bg-no-repeat 
   no-underline [background-position:0_100%]
-  [background-size:100%_0.2em] focus:[background-size:100%_100%] hover:text-white
-  hover:[background-size:100%_100%] motion-safe:transition-all
+  [background-size:100%_0.2em] hover:text-white hover:[background-size:100%_100%]
+  focus:[background-size:100%_100%] motion-safe:transition-all
   motion-safe:duration-300 dark:from-primary-500 dark:to-primary-500;
 }
 
@@ -63,7 +61,7 @@ input:-webkit-autofill:focus {
 }
 
 [cmdk-root] {
-  @apply fixed top-[25vh] left-1/2 z-10 w-full max-w-[640px] 
+  @apply fixed left-1/2 top-[25vh] z-10 w-full max-w-[640px] 
   -translate-x-1/2 transform rounded-xl border bg-white p-2 shadow-lg 
   dark:border-neutral-800 dark:bg-neutral-900 dark:shadow 
   dark:shadow-neutral-700;

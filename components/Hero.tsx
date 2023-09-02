@@ -89,13 +89,13 @@ export default function Hero(): ReactElement {
                 </li>
               </ul>
             </div>
-            <div className="mt-8 hidden lg:block text-clip">
+            <div className="mt-8 hidden text-clip lg:block">
               <span className="text-sm">Press</span>{" "}
-              <span className="rounded-md bg-gray-300 p-1 text-sm dark:bg-gray-400 text-slate-900">
+              <span className="rounded-md bg-gray-300 p-1 text-sm text-slate-900 dark:bg-gray-400">
                 ⌘
               </span>{" "}
               <span className="text-sm">+ </span>
-              <span className="rounded-md bg-gray-300 p-1 text-sm dark:bg-gray-400 text-slate-900">
+              <span className="rounded-md bg-gray-300 p-1 text-sm text-slate-900 dark:bg-gray-400">
                 K
               </span>{" "}
               <span className="text-sm">to start</span>

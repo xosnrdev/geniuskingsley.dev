@@ -1,12 +1,12 @@
 const siteMetadata = {
   title: "Chidera Kingsley",
   author: "Chidera Kingsley",
-  headerTitle: "Chidera Kingsley",
+  headerTitle: "geniuskingsley",
   description: "Software Developer at World Wide Techies - WWT",
   language: "en-us",
   theme: "dark", // system, dark or light
   siteUrl: "https://www.geniuskingsley.dev",
-  siteRepo: "",
+  siteRepo: "https://github.com/spadechaser/blog-portfolio",
   siteLogo: "/static/images/logo.png",
   image: "/static/images/avatar.png",
   socialBanner: "/static/image/opengraph.png",

@@ -4,7 +4,7 @@ import SectionContainer from "@/components/SectionContainer";
 export default function FourZeroFour() {
   return (
     <SectionContainer>
-      <div className="space-x-2 pt-6 pb-8 font-normal normal-case md:space-y-5">
+      <div className="space-x-2 pb-8 pt-6 font-normal normal-case md:space-y-5">
         <h1 className="font-cabinet text-6xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 md:border-r-2 md:px-6 md:text-8xl md:leading-14">
           404
         </h1>

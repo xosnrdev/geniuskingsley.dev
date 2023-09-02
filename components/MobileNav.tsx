@@ -58,7 +58,7 @@ export default function MobileNav() {
             "fixed inset-0 z-20 h-full w-full bg-white opacity-95 dark:bg-black"
           )}
         >
-          <header className="flex justify-end py-5 px-4">
+          <header className="flex justify-end px-4 py-5">
             <button
               type="button"
               aria-label="toggle modal"

@@ -23,7 +23,7 @@ export default function PostLayout({ content, children, next, prev }: Props) {
 
   return (
     <article>
-      <header className="space-y-1 rounded-lg bg-primary-500 py-4 px-2 text-center sm:py-6 md:py-10">
+      <header className="space-y-1 rounded-lg bg-primary-500 px-2 py-4 text-center sm:py-6 md:py-10">
         <PageTitle>{title}</PageTitle>
         <dl>
           <dt className="sr-only">Published on</dt>
@@ -45,7 +45,7 @@ export default function PostLayout({ content, children, next, prev }: Props) {
         style={{ gridTemplateRows: "auto 1fr" }}
       >
         <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:col-span-4 xl:row-span-2 xl:pb-0">
-          <div className="prose max-w-none self-stretch pt-8 pb-8 font-normal normal-case tracking-normal dark:prose-dark">
+          <div className="prose max-w-none self-stretch pb-8 pt-8 font-normal normal-case tracking-normal dark:prose-dark">
             {children}
             <PostNavigation prev={prev} next={next} />
           </div>
