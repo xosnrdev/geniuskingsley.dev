@@ -26,7 +26,7 @@ I have spent the weekend trying out different guides and tutorials, trying to se
 
 But behold, I found a package called [TSDX](https://tsdx.io/), it is a zero-config CLI that helps you develop, test, and publish modern TypeScript packages.
 
-In this guide, I'll be creating my component library `selector`, this is where (I'm hoping) I can show off some of the cool component ideas I have to the world and
+In this guide, I'll be creating my component library `playground`, this is where (I'm hoping) I can show off some of the cool component ideas I have to the world and
 publish it to [NPM](https://www.npmjs.com/) (because I'm cool).
 
 # Getting Started
@@ -34,14 +34,14 @@ publish it to [NPM](https://www.npmjs.com/) (because I'm cool).
 ## Step 1: Initialize project using tsdx
 
 ```bash
-npx tsdx create selector
+npx tsdx create playground
 ```
 
 This will promp you to choose from 3 different options, `basic`, `react`, and `react-with-storybook`.
 
 Please choose `react-with-storybook`
 
-![create-selector](/static/blog/create-playground.webp)
+![create-playground](/static/blog/create-playground.webp)
 
 ## Step 2: Adding Tailwind
 
@@ -197,10 +197,10 @@ This will prompt you to enter your NPM username, password, and email address.
 If you don't have an NPM account yet, you can create an account [here](https://www.npmjs.com/signup)
 
 After logging in, we are ready to publish our package, but first, we need to change our
-package name to whatever we want, in our case it is called `@geniuskingsley/selector`
+package name to whatever we want, in our case it is called `@geniuskingsley/playground`
 
 ```json:package.json
-"name": "@geniuskingsley/selector",
+"name": "@geniuskingsley/playground",
 "author": "Chidera Kingsley",
 "version": "0.0.1",
 ```
@@ -218,7 +218,7 @@ final command `npm publish --access public`
 npm publish --access public
 ```
 
-Boom, you are done! you can now check our NPM account for our new package i.e [@geniuskingsley/selector]().
+Boom, you are done! you can now check our NPM account for our new package i.e [@geniuskingsley/playground]().
 
 # Conclusion
 
