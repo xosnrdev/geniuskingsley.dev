@@ -23,15 +23,13 @@ export default function AuthorLayout({ children, content }: Props) {
             {occupation} <span className="font-cabinet font-semibold">{company}</span>
           </h2>
         </div>
-        <div className="rounded-full border-4 border-blue-600">
+        <div className="pointer-events-none rounded-full border-4 border-blue-600">
           <Image
             alt="Chidera Kingsley"
             height={130}
             width={130}
             src={avatar || ""}
             className="rounded-full object-scale-down grayscale"
-            draggable="false"
-            onContextMenu={(e) => e.preventDefault()}
           />
         </div>
       </div>
