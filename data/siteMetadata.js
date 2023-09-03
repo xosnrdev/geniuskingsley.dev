@@ -9,7 +9,7 @@ const siteMetadata = {
   siteRepo: "https://github.com/spadechaser/blog-portfolio",
   siteLogo: "/static/images/logo.png",
   image: "/static/images/avatar.png",
-  socialBanner: "/static/image/opengraph.png",
+  socialBanner: "/static/image/opengraph-image.jpg",
   email: "devopszn@gmail.com",
   github: "https://github.com/spadechaser",
   twitter: "https://twitter.com/spadeofchase",
