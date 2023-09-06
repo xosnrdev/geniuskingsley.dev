@@ -6,7 +6,7 @@ import { allBlogs } from "contentlayer/generated";
 import { redirect } from "next/navigation";
 
 export const metadata = {
-  title: "Blog - Chidera Kingsley",
+  title: "Blog",
   description: "My Blogs - Chidera Kingsley",
 };
 

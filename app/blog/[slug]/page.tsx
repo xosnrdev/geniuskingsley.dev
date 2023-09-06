@@ -25,13 +25,6 @@ export async function generateMetadata({
   return {
     title: post.title,
     description: post.summary,
-    alternates: {
-      canonical: `/${post.slug}`,
-      languages: {
-        "en-US": `/en-US/${post.slug}`,
-        "de-DE": `/de-DE/${post.slug}`,
-      },
-    },
   };
 }
 

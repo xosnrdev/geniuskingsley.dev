@@ -21,6 +21,14 @@ export const metadata: Metadata = {
   verification: {
     google: "google-site-verification=sQQwR0g7vJR_SoOwiGlRmYPPgZApAJWJlAuyKuaAYYI",
   },
+
+  openGraph: {
+    title: `${siteMetadata.title}`,
+    description:
+      "Explore my UI refactoring skills & intuitive problem-solving experiences with JavaScript.",
+    url: ``,
+    type: "website",
+  },
 };
 
 interface RootLayoutProps {
