@@ -10,7 +10,7 @@ const siteMetadata = {
   siteLogo: "/static/images/logo.png",
   image: "/static/images/avatar.png",
   socialBanner: "/static/images/social-banner.jpeg",
-  blogOpenGraph: "/static/images/open-graph.jpg",
+  blogOpenGraph: "/static/images/opengraph-image.jpg",
   email: "devopszn@gmail.com",
   github: "https://github.com/spadechaser",
   twitter: "https://twitter.com/spadeofchase",
