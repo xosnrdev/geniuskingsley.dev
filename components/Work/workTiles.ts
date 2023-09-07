@@ -22,7 +22,7 @@ export const workTiles: WorkTile[] = [
     description: "I worked on",
     title: "P2PCoder - WWT Project",
     image: {
-      src: "/static/images/p2p.png",
+      src: "/static/images/p2pcoder.gif",
       width: 700,
       height: 700,
     },

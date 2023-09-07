@@ -1,6 +1,7 @@
 import { MDXLayoutRenderer } from "@/components/MDXComponents";
 import PageTitle from "@/components/PageTitle";
 import ScrollProgressBar from "@/components/ScrollProgressBar";
+import siteMetadata from "@/data/siteMetadata";
 import PostLayout from "@/layouts/MDX/PostLayout";
 import MainLayout from "@/layouts/MainLayout";
 import { coreContent, formatBlogLink, sortedBlogPost } from "@/lib/utils/contentlayer";
@@ -22,9 +23,32 @@ export async function generateMetadata({
     };
   }
 
+  const publishedAt = new Date(post.date).toISOString();
+  const modifiedAt = new Date(post.lastmod || post.date).toISOString();
+  const authors = post?.author ? [post.author] : siteMetadata.author;
+
   return {
     title: post.title,
     description: post.summary,
+    openGraph: {
+      title: post.title,
+      description: post.summary,
+      url: siteMetadata.siteUrl + "/blog" + post.slug,
+      siteName: siteMetadata.title,
+      images: [siteMetadata.blogOpenGraph],
+      locale: "en_US",
+      type: "article",
+      publishedTime: publishedAt,
+      modifiedTime: modifiedAt,
+      authors: authors.length > 0 ? authors : [siteMetadata.author],
+    },
+
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description: post.summary,
+      images: [siteMetadata.blogOpenGraph],
+    },
   };
 }
 
