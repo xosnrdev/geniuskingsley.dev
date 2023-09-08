@@ -23,7 +23,7 @@ export default function WorkContent({ work, progress = 0 }: WorkContentProps) {
         </div>
       </WorkLeft>
       <WorkRight progress={progress}>
-        <div className="lg:mt-12 drop-shadow-2xl">
+        <div className="drop-shadow-2xl lg:mt-12">
           <Image src={image.src} alt={title} width={image.width} height={image.height} />
         </div>
       </WorkRight>
