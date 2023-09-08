@@ -17,7 +17,9 @@
     "@dlarroder/playground": "1.10.0",
     "@studio-freight/react-lenis": "0.0.26",
     "@vercel/analytics": "1.0.2",
+    "class-variance-authority": "^0.7.0",
     "classnames": "2.3.2",
+    "clsx": "^2.0.0",
     "cmdk": "0.2.0",
     "contentlayer": "0.3.4",
     "esbuild": "0.19.2",
@@ -25,6 +27,7 @@
     "github-slugger": "^2.0.0",
     "gsap": "3.12.2",
     "logrocket": "5.0.1",
+    "lucide-react": "^0.274.0",
     "mdx-bundler": "^9.2.1",
     "next": "13.4.19",
     "next-contentlayer": "0.3.4",
@@ -38,6 +41,8 @@
     "rehype-slug": "5.1.0",
     "remark": "14.0.3",
     "sharp": "0.32.5",
+    "tailwind-merge": "^1.14.0",
+    "tailwindcss-animate": "^1.0.7",
     "use-breakpoint": "3.1.1"
   },
   "devDependencies": {
@@ -68,6 +73,7 @@
     "prettier-plugin-tailwindcss": "0.2.1",
     "tailwind-scrollbar": "3.0.5",
     "tailwindcss": "3.3.3",
+    "ts-node": "^10.9.1",
     "typescript": "5.2.2"
   },
   "lint-staged": {

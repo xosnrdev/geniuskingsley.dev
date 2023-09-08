@@ -5,10 +5,8 @@ import Link from "next/link";
 import { ReactElement, useContext, useEffect, useRef } from "react";
 import { HiOutlineArrowNarrowDown } from "react-icons/hi";
 import { ScrollContext } from "./Providers/ScrollProvider";
+import Social from "./Social";
 import { renderCanvas } from "./renderCanvas";
-import siteMetadata from "@/data/siteMetadata";
-import { AiFillLinkedin } from "react-icons/ai";
-import { FaGithub, FaTwitter } from "react-icons/fa";
 
 export default function Hero(): ReactElement {
   const ref = useRef<HTMLHeadingElement>(null);
@@ -55,40 +53,12 @@ export default function Hero(): ReactElement {
                 Read more about me &rarr;
               </Link>
             </div>
-            <div className="mt-2 text-xl">
-              <ul className="sticky flex cursor-pointer items-center space-x-6">
-                <li>
-                  <a
-                    href={siteMetadata.linkedin}
-                    target="_blank"
-                    rel="noreferrer"
-                    aria-label="linkedin"
-                  >
-                    <AiFillLinkedin />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href={siteMetadata.github}
-                    target="_blank"
-                    rel="noreferrer"
-                    aria-label="github"
-                  >
-                    <FaGithub />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href={siteMetadata.twitter}
-                    target="_blank"
-                    rel="noreferrer"
-                    aria-label="twitter"
-                  >
-                    <FaTwitter />
-                  </a>
-                </li>
-              </ul>
-            </div>
+
+            <span>
+              {" "}
+              <Social type="social" />
+            </span>
+
             <div className="mt-8 hidden text-clip lg:block">
               <span className="text-sm">Press</span>{" "}
               <span className="rounded-md bg-gray-300 p-1 text-sm text-slate-900 dark:bg-gray-400">

@@ -8,9 +8,10 @@ const siteMetadata = {
   siteUrl: "https://www.geniuskingsley.dev",
   siteRepo: "https://github.com/spadechaser/blog-portfolio",
   siteLogo: "/static/images/logo.png",
-  image: "/static/images/avatar.png",
-  socialBanner: "/static/images/social-banner.jpeg",
-  blogOpenGraph: "/static/images/opengraph-image.jpg",
+  image: "https://res.cloudinary.com/dc5x1aox7/image/upload/v1694168407/IMG_3790_xf2xjf.png",
+  socialBanner: "https://res.cloudinary.com/dc5x1aox7/image/upload/v1694170718/IMG_4810_sfjnft.jpg",
+  blogOpenGraph:
+    "https://res.cloudinary.com/dc5x1aox7/image/upload/v1694170718/IMG_4808_q0hpvr.jpg",
   email: "devopszn@gmail.com",
   github: "https://github.com/spadechaser",
   twitter: "https://twitter.com/spadeofchase",

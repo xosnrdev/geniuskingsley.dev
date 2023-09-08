@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { ProjectModal } from "./types";
 
 interface ProjectProps {
@@ -10,7 +11,7 @@ interface ProjectProps {
 
 export default function ProjectItem({ index, title, url, role, setModal }: ProjectProps) {
   return (
-    <a
+    <Link
       href={url}
       target="_blank"
       onMouseEnter={() => {
@@ -28,6 +29,6 @@ export default function ProjectItem({ index, title, url, role, setModal }: Proje
       <p className="text-sm font-light transition-all group-hover:translate-x-3 group-hover:scale-110 sm:text-lg">
         {role}
       </p>
-    </a>
+    </Link>
   );
 }

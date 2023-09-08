@@ -4,7 +4,7 @@ import MainLayout from "@/layouts/MainLayout";
 import { allAuthors } from "contentlayer/generated";
 
 export const metadata = {
-  title: "Uses",
+  title: "Tools",
   description: "My productivity tools",
 };
 

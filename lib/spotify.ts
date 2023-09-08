@@ -48,3 +48,5 @@ export const getTopTracks = async () => {
     },
   });
 };
+
+console.log(getTopTracks());
