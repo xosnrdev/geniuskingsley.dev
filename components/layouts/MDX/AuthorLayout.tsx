@@ -24,12 +24,12 @@ export default function AuthorLayout({ children, content }: Props) {
             {occupation} <span className="font-cabinet font-semibold"> {company}</span>
           </h2>
           <div className="my-2 flex flex-col gap-y-2 text-center">
-            <div className="flex items-center gap-x-3">
+            <div className=" flex items-center">
               <Link
                 href="/"
                 rel="noreferrer noopener"
                 target="_blank"
-                className="flex basis-[90%] items-center justify-center gap-x-2 rounded-md border border-transparent bg-zinc-100 py-2 text-center font-cabinet text-lg font-semibold hover:border-zinc-200 dark:hover:border-zinc-700"
+                className="flex basis-[90%] items-center justify-center rounded-md bg-blue-600 text-center font-cabinet text-lg font-semibold text-slate-100"
               >
                 View Resume{" "}
                 <svg
@@ -46,25 +46,6 @@ export default function AuthorLayout({ children, content }: Props) {
                   <path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"></path>
                 </svg>
               </Link>
-              <Link
-                href="/"
-                className="dark:text-primary-color text-secondary-color dark:bg-primary-bg flex basis-[10%] items-center justify-center rounded-md border border-transparent bg-zinc-100 py-3 text-center text-lg hover:border-zinc-200 hover:underline dark:hover:border-zinc-700"
-                title="Download Resume"
-              >
-                <svg
-                  stroke="currentColor"
-                  fill="currentColor"
-                  stroke-width="0"
-                  viewBox="0 0 24 24"
-                  className="text-lg"
-                  aria-label="Download Resume"
-                  height="1em"
-                  width="1em"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M19 9h-4V3H9v6H5l7 8zM4 19h16v2H4z"></path>
-                </svg>
-              </Link>
             </div>
           </div>
         </div>
@@ -78,7 +59,7 @@ export default function AuthorLayout({ children, content }: Props) {
           />
         </div>
       </div>
-      <span className="my-2 flex items-center justify-center lg:hidden">
+      {/* <span className="my-2 flex items-center justify-center lg:hidden">
         <Link
           href="mailto:kharunaking@gmail.com"
           className="css-1tzfalu flex items-center justify-center gap-x-2"
@@ -95,9 +76,9 @@ export default function AuthorLayout({ children, content }: Props) {
           >
             <path d="M20 4H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm0 2v.511l-8 6.223-8-6.222V6h16zM4 18V9.044l7.386 5.745a.994.994 0 0 0 1.228 0L20 9.044 20.002 18H4z"></path>
           </svg>
-          Kharunaking@gmail.com
+          Send me an email
         </Link>
-      </span>
+      </span> */}
       <div className="prose max-w-none self-stretch pb-8 font-normal normal-case tracking-normal dark:prose-dark md:text-lg xl:col-span-2">
         {children}
       </div>

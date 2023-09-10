@@ -32,7 +32,7 @@ export const workTiles: WorkTile[] = [
     description: `A web-based application that aims to redefine the way you personalize your clothing, with DALLE AI the application generates and integrates images, enriching the customization process.`,
     title: "Threejs Shirt Customizer",
     image: {
-      src: "/static/images/threejs.png",
+      src: "https://res.cloudinary.com/dc5x1aox7/image/upload/v1694377448/IMG_4821_i1p5pu.png",
       width: 1000,
       height: 800,
     },
