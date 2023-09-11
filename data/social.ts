@@ -7,7 +7,7 @@ import {
   BiLogoTwitter,
   BiLogoYoutube,
 } from "react-icons/bi";
-import { FaHashnode } from "react-icons/fa6";
+import { FaHashnode, FaProductHunt } from "react-icons/fa6";
 import siteMetadata from "./siteMetadata";
 
 export const socialLinks = [
@@ -65,6 +65,13 @@ export const socialLinks = [
     name: "Stackoverflow",
     url: "https://stackoverflow.com/users/21771478/chidera-kingsley",
     icon: BiLogoStackOverflow,
+    status: "social",
+  },
+  {
+    id: 9,
+    name: "Producthunt",
+    url: "https://www.producthunt.com/@spadechaser",
+    icon: FaProductHunt,
     status: "social",
   },
 ];
