@@ -1,4 +1,5 @@
 import { socialLinks } from "@/data/social";
+import Link from "next/link";
 
 export default function Social({ type }: { type: string }) {
   return (
@@ -7,7 +8,7 @@ export default function Social({ type }: { type: string }) {
         .filter((item) => item.status === type)
         .map((value) => (
           <li key={value.id}>
-            <a
+            <Link
               href={value.url}
               rel="noreferer noopener"
               target="_blank"
@@ -19,7 +20,7 @@ export default function Social({ type }: { type: string }) {
               />{" "}
               &nbsp;
               {value.name}
-            </a>
+            </Link>
           </li>
         ))}
     </ul>
