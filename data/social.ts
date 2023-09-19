@@ -42,7 +42,7 @@ export const socialLinks = [
   {
     id: 5,
     name: "Instagram",
-    url: "https://instagram.com/spadeofchase",
+    url: "https://instagram.com/xosnrdev",
     icon: BiLogoInstagram,
     status: "social",
   },
@@ -56,7 +56,7 @@ export const socialLinks = [
   {
     id: 7,
     name: "Youtube",
-    url: "https://youtube.com/@spadeofchase",
+    url: "https://youtube.com/@xosnrdev",
     icon: BiLogoYoutube,
     status: "social",
   },
@@ -70,7 +70,7 @@ export const socialLinks = [
   {
     id: 9,
     name: "Producthunt",
-    url: "https://www.producthunt.com/@spadechaser",
+    url: "https://www.producthunt.com/@xosnrdev",
     icon: FaProductHunt,
     status: "social",
   },

@@ -19,7 +19,7 @@ export default function WorkContent({ work, progress = 0 }: WorkContentProps) {
           <div className="font-cabinet text-4xl font-bold tracking-tight md:text-5xl xl:text-6xl">
             {title}
           </div>
-          <span className="h-full text-xl font-normal md:text-xl xl:text-xl">{description}</span>
+          <span className="h-full text-xl font-light md:text-xl xl:text-xl">{description}</span>
         </div>
       </WorkLeft>
       <WorkRight progress={progress}>

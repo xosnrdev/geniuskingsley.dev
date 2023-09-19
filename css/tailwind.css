@@ -2,6 +2,7 @@
 @import url("https://fonts.cdnfonts.com/css/space-grotesk");
 @import url("https://fonts.cdnfonts.com/css/inter");
 @import url("https://fonts.cdnfonts.com/css/roboto");
+@import url("https://fonts.googleapis.com/css2?family=Lexend&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -102,7 +103,7 @@ input:-webkit-autofill:focus {
 }
 
 .css-1tzfalu {
-  --tw-gradient-from: #3B82F6 !important;
-  --tw-gradient-to: #3B82F6 !important;
+  --tw-gradient-from: #3b82f6 !important;
+  --tw-gradient-to: #3b82f6 !important;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }

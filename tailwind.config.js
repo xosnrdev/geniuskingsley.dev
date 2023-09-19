@@ -27,9 +27,7 @@ module.exports = {
       },
       fontFamily: {
         sans: [
-          "Inter",
-          "ui-sans-serif",
-          "Cascadia Code",
+          "Lexend",
           "system-ui",
           "-apple-system",
           "BlinkMacSystemFont",
@@ -47,7 +45,6 @@ module.exports = {
         ],
         cabinet: [
           "Cabinet Grotesk",
-          "ui-sans-serif",
           "system-ui",
           "-apple-system",
           "BlinkMacSystemFont",
@@ -71,6 +68,7 @@ module.exports = {
           "BlinkMacSystemFont",
           "Segoe UI",
           "Roboto",
+          "Inter",
           "Helvetica Neue",
           "Arial",
           "Noto Sans",
