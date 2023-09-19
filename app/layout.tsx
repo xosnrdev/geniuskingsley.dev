@@ -71,7 +71,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
       </head>
       <body className="bg-white text-black dark:bg-black dark:text-white">
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
           <Header />
           <LenisProvider>
             <main>{children}</main>

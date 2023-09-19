@@ -74,7 +74,7 @@ export default function ProjectPreview({ modal, projects }: ProjectModalProps) {
   return (
     <>
       <motion.div
-        className="pointer-events-none absolute flex h-[400px] w-[500px] items-center justify-center overflow-hidden bg-white"
+        className="pointer-events-none absolute flex h-[300px] w-[400px] items-center justify-center overflow-hidden bg-white"
         ref={modalContainer}
         variants={scaleAnimation}
         initial="initial"
@@ -95,8 +95,8 @@ export default function ProjectPreview({ modal, projects }: ProjectModalProps) {
                 <Image
                   className="h-auto"
                   src={`/static/images/project/${src}`}
-                  width={500}
-                  height={400}
+                  width={400}
+                  height={300}
                   alt="image"
                 />
               </div>
