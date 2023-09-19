@@ -23,7 +23,7 @@ export default function AuthorLayout({ children, content }: Props) {
           <div className="flex flex-col gap-y-2">
             <div className="">
               <Link
-                href="https://drive.google.com/file/d/1RuRj5rHM-Qg32oxeVKT9-C-ot3lpl3EM/view?usp=sharing"
+                href="https://drive.google.com/file/d/1Q0RQIEV2jaVrEQJ22BjWmJXCHGTrzIgv/view?usp=drivesdk"
                 rel="noreferrer noopener"
                 target="_blank"
                 className="css-1tzfalu text-center font-semibold"
