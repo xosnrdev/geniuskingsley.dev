@@ -23,7 +23,7 @@ export default function UsesLayout({ children }: Props) {
           </Link>
         </span>
       </div>
-      <div className="prose max-w-none flex-wrap self-stretch pb-8 font-normal normal-case tracking-normal dark:prose-dark md:text-lg xl:col-span-2">
+      <div className="prose max-w-none flex-wrap pb-8 font-normal dark:prose-dark md:text-lg xl:col-span-2">
         {children}
         <div className="space-y-5 lg:space-y-7">
           <div className="flex flex-wrap gap-4 md:justify-center">
