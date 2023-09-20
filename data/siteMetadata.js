@@ -2,7 +2,7 @@ const siteMetadata = {
   title: "Chidera Kingsley",
   author: "Chidera Kingsley",
   headerTitle: "xosnrdev",
-  description: "Software Developer at World Wide Techies (Talent Yard)",
+  description: "Software Engineer at World Wide Techies (Talent Yard)",
   language: "en-us",
   theme: "dark", // system, dark or light
   siteUrl: "https://www.geniuskingsley.dev",

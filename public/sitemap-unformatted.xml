@@ -3,15 +3,15 @@
         <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
             
                         <url>
-                            <loc>https://www.geniuskingsley.dev/tags/design-systems</loc>
-                        </url>
-                    
-                        <url>
                             <loc>https://www.geniuskingsley.dev/tags/asyncawait</loc>
                         </url>
                     
                         <url>
-                            <loc>https://www.geniuskingsley.dev/tags/library</loc>
+                            <loc>https://www.geniuskingsley.dev/tags/design-systems</loc>
+                        </url>
+                    
+                        <url>
+                            <loc>https://www.geniuskingsley.dev/tags/javascript</loc>
                         </url>
                     
                         <url>
@@ -23,11 +23,11 @@
                         </url>
                     
                         <url>
-                            <loc>https://www.geniuskingsley.dev/tags/npm</loc>
+                            <loc>https://www.geniuskingsley.dev/tags/library</loc>
                         </url>
                     
                         <url>
-                            <loc>https://www.geniuskingsley.dev/tags/javascript</loc>
+                            <loc>https://www.geniuskingsley.dev/tags/npm</loc>
                         </url>
                     
                         <url>
@@ -43,7 +43,19 @@
                         </url>
                     
                         <url>
+                            <loc>https://www.geniuskingsley.dev/tags/reactjs-1</loc>
+                        </url>
+                    
+                        <url>
                             <loc>https://www.geniuskingsley.dev/tags/reactjs-2</loc>
+                        </url>
+                    
+                        <url>
+                            <loc>https://www.geniuskingsley.dev/tags/reactjs-3</loc>
+                        </url>
+                    
+                        <url>
+                            <loc>https://www.geniuskingsley.dev/tags/snippets</loc>
                         </url>
                     
                         <url>
@@ -52,18 +64,6 @@
                     
                         <url>
                             <loc>https://www.geniuskingsley.dev/tags/snippets-2</loc>
-                        </url>
-                    
-                        <url>
-                            <loc>https://www.geniuskingsley.dev/tags/snippets</loc>
-                        </url>
-                    
-                        <url>
-                            <loc>https://www.geniuskingsley.dev/tags/reactjs-3</loc>
-                        </url>
-                    
-                        <url>
-                            <loc>https://www.geniuskingsley.dev/tags/reactjs-1</loc>
                         </url>
                     
                         <url>

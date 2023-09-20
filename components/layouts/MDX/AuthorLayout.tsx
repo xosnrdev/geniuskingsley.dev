@@ -59,9 +59,9 @@ export default function AuthorLayout({ children, content }: Props) {
         </div>
       </div>
       <p className="prose dark:prose-dark lg:prose-lg lg:min-w-full xl:col-span-2">
-        I am a Software Developer with a background in Mechanical Engineering. Over the years, I
-        have shifted my focus to developing web applications, gaining proficiency in languages such
-        as JavaScript and Python. In my recent role at World Wide Techies (Talent Yard), my
+        I am a Software Engineer with a background in Mechanical Engineering. Over the years, I have
+        shifted my focus to developing web applications, gaining proficiency in languages such as
+        JavaScript and Python. In my recent role at World Wide Techies (Talent Yard), my
         responsibilities encompassed enhancing Firebase functionalities through JavaScript and
         crafting user-centric components with React for live streaming platforms.
       </p>
