@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Social({ type }: { type: string }) {
   return (
-    <ul className="my-10 flex flex-wrap items-center gap-x-5 gap-y-4">
+    <ul className="my-10 flex flex-wrap items-center gap-x-5 gap-y-4 text-lg font-normal">
       {socialLinks
         .filter((item) => item.status === type)
         .map((value) => (
@@ -12,10 +12,10 @@ export default function Social({ type }: { type: string }) {
               href={value.url}
               rel="noreferer noopener"
               target="_blank"
-              className="group flex items-center border-b border-zinc-200 dark:border-b-zinc-800"
+              className="group flex items-center border-b border-slate-200 dark:border-b-slate-800"
             >
               <value.icon
-                className="h-5 w-5 flex-shrink-0 text-zinc-500 duration-300 group-hover:text-zinc-800 group-hover:dark:text-white"
+                className="h-5 w-5 flex-shrink-0 text-base text-slate-500 duration-300 group-hover:text-slate-800 group-hover:dark:text-slate-200"
                 aria-hidden="true"
               />{" "}
               &nbsp;

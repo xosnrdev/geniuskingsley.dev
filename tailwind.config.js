@@ -26,9 +26,7 @@ module.exports = {
         "8.5xl": "7rem",
       },
       fontFamily: {
-        sans: ["Lexend", ...defaultTheme.fontFamily.sans],
-        cabinet: ["Cabinet Grotesk"],
-        space: ["Space Grotesk", "Inter"],
+        interUi: ["Inter", ...defaultTheme.fontFamily.sans],
       },
       gradientColorStops: {
         "gradient-1-start": "#F20089",

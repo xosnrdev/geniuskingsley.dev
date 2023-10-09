@@ -28,7 +28,7 @@ const Pre = ({ children }: DetailedHTMLProps<HTMLAttributes<HTMLPreElement>, HTM
         <button
           aria-label="Copy code"
           type="button"
-          className={`absolute right-2 top-2 h-8 w-8 rounded border-2 bg-gray-700 p-1 dark:bg-gray-800 ${
+          className={`absolute right-2 top-2 h-8 w-8 rounded border-2 bg-slate-700 p-1 dark:bg-slate-800 ${
             copied ? "border-sky-400 focus:border-sky-400 focus:outline-none" : "border-gray-300"
           }`}
           onClick={onCopy}

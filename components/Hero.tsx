@@ -7,6 +7,7 @@ import { HiOutlineArrowNarrowDown } from "react-icons/hi";
 import { ScrollContext } from "./Providers/ScrollProvider";
 import Social from "./Social";
 import { renderCanvas } from "./renderCanvas";
+import { almarena } from "app/fonts/localFont";
 
 export default function Hero(): ReactElement {
   const ref = useRef<HTMLHeadingElement>(null);
@@ -24,10 +25,7 @@ export default function Hero(): ReactElement {
   }, []);
 
   return (
-    <div>
-      <h1 className="sr-only font-cabinet">
-        Hello I'm Chidera, I'm a software Engineer, and I love building things for the web.
-      </h1>
+    <div className={almarena.className}>
       <motion.div
         className="relative z-10 flex h-[calc(100vh-81px)] items-center md:h-[calc(100vh-116px)]"
         animate={{
@@ -37,18 +35,18 @@ export default function Hero(): ReactElement {
       >
         <div className="mx-auto w-screen max-w-3xl px-4 sm:px-9 xl:max-w-5xl xl:px-0">
           <div className="-mt-36">
-            <div ref={ref} className="flex cursor-default flex-col space-y-2 text-clip">
-              <h1 className=" bg-blue-500 bg-clip-text font-cabinet text-5xl font-extrabold leading-tight tracking-tighter text-transparent sm:text-center sm:text-5xl sm:text-[4rem] sm:leading-[4.75rem] md:text-6xl lg:text-left xl:text-8xl">
+            <div ref={ref} className="flex cursor-default flex-col space-y-2">
+              <h1 className=" bg-blue-600/90 bg-clip-text text-left text-5xl font-bold leading-normal tracking-normal text-transparent md:text-6xl xl:text-7xl xl:leading-relaxed">
                 Chidera Kingsley
               </h1>
-              <h2 className="font-space text-2xl font-medium opacity-80 sm:text-4xl md:text-5xl xl:text-6xl">
+              <h2 className="text-4xl font-normal tracking-normal text-slate-800 dark:text-slate-200 md:text-5xl xl:text-5xl">
                 "Crafting for the web",
                 <br /> I blend tradition with digital trends.
               </h2>
 
               <Link
                 href="/about"
-                className="underline-magical text-md w-max cursor-pointer sm:text-lg md:text-xl xl:text-xl"
+                className="w-max animate-pulse cursor-pointer rounded-lg text-lg font-light leading-normal tracking-normal text-slate-800 transition-transform duration-300 hover:translate-y-2 hover:bg-slate-100 hover:px-3 hover:py-2 hover:text-slate-800 dark:text-slate-200 hover:dark:bg-inherit md:text-xl xl:text-xl"
               >
                 Read more about me &rarr;
               </Link>
@@ -59,13 +57,13 @@ export default function Hero(): ReactElement {
               <Social type="social" />
             </span>
 
-            <div className="mt-8 hidden text-clip lg:block">
+            <div className="mt-8 hidden text-clip text-lg lg:block">
               <span className="text-sm">Press</span>{" "}
-              <span className="rounded-md bg-gray-300 p-1 text-sm text-slate-900 dark:bg-gray-400">
+              <span className="rounded-md bg-gray-300 p-1 text-sm text-slate-800 dark:bg-gray-400">
                 ⌘
               </span>{" "}
               <span className="text-sm">+ </span>
-              <span className="rounded-md bg-gray-300 p-1 text-sm text-slate-900 dark:bg-gray-400">
+              <span className="rounded-md bg-gray-300 p-1 text-sm text-slate-800 dark:bg-gray-400">
                 K
               </span>{" "}
               <span className="text-sm">to start</span>

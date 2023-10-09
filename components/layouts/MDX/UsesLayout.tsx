@@ -8,10 +8,10 @@ export default function UsesLayout({ children }: Props) {
   return (
     <div className="pt-8">
       <div className="mb-8 flex flex-col space-y-2 text-center">
-        <h1 className="text-5xl font-bold leading-9 sm:text-4xl sm:leading-10 md:text-5xl md:leading-14">
+        <h1 className="text-5xl font-bold leading-9 text-slate-800 dark:text-slate-200 sm:text-4xl sm:leading-10 md:text-5xl md:leading-14">
           Tools I Use
         </h1>
-        <span className="text-gray-700 dark:text-gray-300">
+        <span className="text-slate-700 dark:text-slate-300">
           Inspired by{" "}
           <Link
             href="https://wesbos.com/uses"
@@ -23,9 +23,9 @@ export default function UsesLayout({ children }: Props) {
           </Link>
         </span>
       </div>
-      <div className="prose max-w-none flex-wrap pb-8 font-normal dark:prose-dark md:text-lg xl:col-span-2">
+      <div className="prose max-w-none flex-wrap pb-8 font-normal text-slate-600/90 dark:prose-dark dark:text-slate-200/90 md:text-lg xl:col-span-2">
         {children}
-        <div className="space-y-5 lg:space-y-7">
+        <div className="space-y-5 text-slate-600/90 dark:text-slate-200/90 lg:space-y-7">
           <div className="flex flex-wrap gap-4 md:justify-center">
             <div style={{ overflow: "hidden" }}>
               <div style={{ opacity: 1, transform: "none" }}>

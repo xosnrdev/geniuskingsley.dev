@@ -6,11 +6,11 @@ async function fetchNowPlaying(): Promise<NowPlayingSong | null> {
   try {
     const response = await getNowPlaying();
 
-    if (response.status === 204 || response.status > 400) {
+    if (response?.status === 204 || response?.status !== 400) {
       return null;
     }
 
-    const song = await response.json();
+    const song = await response?.json();
     const isPlaying = song.is_playing;
     const title = song.item.name;
     const artist = song.item.artists.map((artist: Artist) => artist.name).join(", ");
@@ -38,7 +38,7 @@ async function fetchNowPlaying(): Promise<NowPlayingSong | null> {
 export default async function NowPlaying() {
   const nowPlaying = await fetchNowPlaying();
 
-  if (!nowPlaying?.songUrl || !nowPlaying.title || !nowPlaying.artist) {
+  if (nowPlaying?.songUrl || nowPlaying?.title || nowPlaying?.artist) {
     return (
       <div className="flex items-center justify-center space-x-2 text-sm sm:justify-start sm:text-base">
         <svg className="mt-[-2px] h-4 w-4" viewBox="0 0 168 168">
@@ -61,16 +61,16 @@ export default async function NowPlaying() {
       <AnimatedBars />
       <div className="inline-flex max-w-[70%] items-center space-x-2 text-sm sm:max-w-[90%] sm:text-base">
         <a
+          href={nowPlaying?.songUrl}
           className="inline-block truncate font-medium text-gray-800 dark:text-gray-200"
-          href={nowPlaying.songUrl}
           target="_blank"
           rel="noopener noreferrer"
         >
-          {nowPlaying.title}
+          {nowPlaying?.title}
         </a>
         <span className="mx-2 text-gray-500 dark:text-gray-300">{" – "}</span>
         <p className="inline-block truncate text-gray-500 dark:text-gray-300">
-          {nowPlaying.artist}
+          {nowPlaying?.artist}
         </p>
       </div>
     </div>

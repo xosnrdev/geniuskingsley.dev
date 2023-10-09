@@ -2,24 +2,24 @@ import { Project } from "./types";
 
 export const projects: Project[] = [
   {
-    title: "P2PCoder - Talent Yard Project",
+    title: "P2PCoder - World Wide Techies Project",
     src: "p2pcoder.png",
-    color: "#dbeafe",
+    color: "#f1f5f9",
     url: "https://github.com/world-wide-techies/P2PCoder",
-    role: "Web Developer",
+    role: "Software Developer",
   },
   {
     title: "ThreeJS Shirt Customizer",
     src: "threejs.png",
-    color: "#ddd6fe",
+    color: "#f1f5f9",
     url: "https://three.jscodespace.com",
     role: "Software Developer",
   },
   {
-    title: "Annon Chat - Talent Yard Project",
+    title: "Annon Chat - World Wide Techies Project",
     src: "annon_chat.png",
-    color: "#fae8ff",
+    color: "#f1f5f9",
     url: "https://annon-chat.vercel.app/",
-    role: "Web Developer",
+    role: "Software Developer",
   },
 ];

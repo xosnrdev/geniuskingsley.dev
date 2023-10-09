@@ -74,7 +74,7 @@ export default function ProjectPreview({ modal, projects }: ProjectModalProps) {
   return (
     <>
       <motion.div
-        className="pointer-events-none absolute flex h-[300px] w-[400px] items-center justify-center overflow-hidden bg-white"
+        className="pointer-events-none absolute flex h-[300px] w-[400px] items-center justify-center overflow-hidden rounded-xl bg-slate-100 shadow-xl"
         ref={modalContainer}
         variants={scaleAnimation}
         initial="initial"
@@ -105,14 +105,14 @@ export default function ProjectPreview({ modal, projects }: ProjectModalProps) {
         </div>
       </motion.div>
       <motion.div
-        className="font-base pointer-events-none absolute z-10 flex h-16 w-16 items-center justify-center rounded-full bg-primary-500 font-light text-white"
+        className="font-base pointer-events-none absolute z-10 flex h-16 w-16 items-center justify-center rounded-full bg-blue-600/90 font-light text-slate-200"
         ref={cursor}
         variants={scaleAnimation}
         initial="initial"
         animate={active ? "enter" : "closed"}
       ></motion.div>
       <motion.div
-        className="font-base pointer-events-none absolute z-10 flex h-16 w-16 items-center justify-center rounded-full bg-transparent font-light text-white"
+        className="font-base pointer-events-none absolute z-10 flex h-16 w-16 items-center justify-center rounded-full bg-transparent font-light text-slate-200"
         ref={cursorLabel}
         variants={scaleAnimation}
         initial="initial"

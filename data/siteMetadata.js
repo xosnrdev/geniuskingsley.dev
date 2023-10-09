@@ -2,16 +2,15 @@ const siteMetadata = {
   title: "Chidera Kingsley",
   author: "Chidera Kingsley",
   headerTitle: "xosnrdev",
-  description: "Software Engineer at World Wide Techies (Talent Yard)",
+  description: "Software Engineer at World Wide Techies",
   language: "en-us",
-  theme: "dark", // system, dark or light
+  theme: "system", // system, dark or light
   siteUrl: "https://www.geniuskingsley.dev",
   siteRepo: "https://github.com/xosnrdev/blog-portfolio",
   siteLogo: "/static/images/logo.png",
   image: "https://res.cloudinary.com/dc5x1aox7/image/upload/v1694168407/IMG_3790_xf2xjf.png",
   socialBanner: "https://res.cloudinary.com/dc5x1aox7/image/upload/v1694170718/IMG_4810_sfjnft.jpg",
-  blogOpenGraph:
-    "https://res.cloudinary.com/dc5x1aox7/image/upload/v1694170718/IMG_4808_q0hpvr.jpg",
+  blogOpenGraph: `https://res.cloudinary.com/dc5x1aox7/image/upload/v1694170718/IMG_4808_q0hpvr.jpg`,
   email: "chidera@geniuskingsley.dev",
   github: "https://github.com/xosnrdev",
   twitter: "https://twitter.com/xosnrdev",

@@ -1,8 +1,4 @@
-@import url("https://fonts.cdnfonts.com/css/cabinet-grotesk");
-@import url("https://fonts.cdnfonts.com/css/space-grotesk");
-@import url("https://fonts.cdnfonts.com/css/inter");
-@import url("https://fonts.cdnfonts.com/css/roboto");
-@import url("https://fonts.googleapis.com/css2?family=Lexend&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -26,16 +22,17 @@ input:-webkit-autofill:focus {
 }
 
 .underline-magical {
-  @apply bg-gradient-to-r from-primary-500 to-primary-500 bg-no-repeat 
+  @apply bg-gradient-to-r from-blue-600/90 to-blue-600/90 bg-no-repeat 
   no-underline [background-position:0_100%]
-  [background-size:100%_0.2em] hover:text-white hover:[background-size:100%_100%]
+  [background-size:100%_0.2em] hover:text-slate-200 hover:[background-size:100%_100%]
   focus:[background-size:100%_100%] motion-safe:transition-all
-  motion-safe:duration-300 dark:from-primary-500 dark:to-primary-500;
+  motion-safe:duration-300 dark:from-blue-600/90 dark:to-blue-600/90;
 }
 
 .horizontal-underline {
   border-bottom-width: 0;
-  background-image: linear-gradient(transparent, transparent), linear-gradient(#2563eb, #2563eb);
+  background-image: linear-gradient(transparent, transparent),
+    linear-gradient(rgb(37 99 235 / 0.9), rgb(37 99 235 / 0.9));
   background-size: 0 3px;
   background-position: 0 100%;
   background-repeat: no-repeat;
@@ -53,7 +50,8 @@ input:-webkit-autofill:focus {
 }
 
 #nprogress .bar {
-  background: #2563eb !important;
+  background: linear-gradient(transparent, transparent),
+    linear-gradient(rgb(37 99 235 / 0.9), rgb(37 99 235 / 0.9)) !important;
   height: 4px !important;
 }
 
@@ -64,46 +62,48 @@ input:-webkit-autofill:focus {
 [cmdk-root] {
   @apply fixed left-1/2 top-[25vh] z-10 w-full max-w-[640px] 
   -translate-x-1/2 transform rounded-xl border bg-white p-2 shadow-lg 
-  dark:border-neutral-800 dark:bg-neutral-900 dark:shadow 
-  dark:shadow-neutral-700;
+  dark:border-slate-800 dark:bg-slate-700 dark:shadow 
+  dark:shadow-slate-700;
 }
 
 [cmdk-input] {
-  @apply h-12 w-full border-0 border-b border-b-gray-200 
+  @apply h-12 w-full border-0 border-b border-b-slate-200 
   bg-transparent text-sm font-semibold
-  text-gray-500 placeholder-gray-500 outline-none focus:border-b focus:border-transparent 
-  focus:border-b-gray-200 focus:ring-0 dark:border-b-gray-500 dark:text-gray-200
-  dark:placeholder-gray-300;
+  text-slate-500 placeholder-slate-500 outline-none focus:border-b focus:border-transparent 
+  focus:border-b-slate-200 focus:ring-0 dark:border-b-slate-500 dark:text-slate-200
+  dark:placeholder-slate-300;
 }
 
 [cmdk-list] {
   @apply mt-2 max-h-64 overflow-y-scroll px-4 scrollbar-thin
-  scrollbar-track-gray-100 scrollbar-thumb-gray-300 scrollbar-track-rounded-lg 
-  scrollbar-thumb-rounded-lg dark:scrollbar-track-neutral-800 
-  dark:scrollbar-thumb-neutral-700;
+  scrollbar-track-slate-100 scrollbar-thumb-slate-300 scrollbar-track-rounded-lg 
+  scrollbar-thumb-rounded-lg dark:scrollbar-track-slate-800 
+  dark:scrollbar-thumb-slate-700;
 }
 
 [cmdk-item] {
   @apply relative flex h-12 cursor-pointer select-none items-center space-x-3 rounded-md
-  px-4 text-sm font-medium text-gray-700 transition-all duration-200 
-  ease-in dark:text-gray-200;
+  px-4 text-sm font-medium text-slate-700 transition-all duration-200 
+  ease-in dark:text-slate-200;
 }
 
 [cmdk-item][aria-selected="true"] {
-  @apply bg-gray-200 dark:bg-neutral-800;
+  @apply bg-slate-200 dark:bg-slate-800;
 }
 
 [cmdk-group-heading] {
   @apply flex select-none items-center py-1 text-sm 
-  font-medium text-gray-700 dark:text-gray-200;
+  font-medium text-slate-700 dark:text-slate-200;
 }
 
 [cmdk-empty] {
-  @apply flex items-center justify-center py-4 text-sm text-gray-500;
+  @apply flex items-center justify-center py-4 text-sm text-slate-500;
 }
 
 .css-1tzfalu {
-  --tw-gradient-from: #3b82f6 !important;
-  --tw-gradient-to: #3b82f6 !important;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-from: rgb(37 99 235 / 0.9) !important; /* from-amber-500 */
+  --tw-gradient-via: rgb(37 99 235 / 0.9) !important; /* via-fuchsia-500 */
+  --tw-gradient-to: rgb(37 99 235 / 0.9) !important; /* to-rose-500 */
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-via), var(--tw-gradient-to) !important;
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }

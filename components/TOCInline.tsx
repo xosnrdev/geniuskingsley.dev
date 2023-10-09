@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { Toc } from "types/Toc";
 
 interface TOCInlineProps {
@@ -47,12 +48,12 @@ const TOCInline = ({
     <ul>
       {filteredToc.map((heading) => (
         <li key={heading.value} className={`${heading.depth >= indentDepth && "ml-6"}`}>
-          <a
+          <Link
             href={heading.url}
-            className="not-prose border-b border-primary-400 no-underline dark:border-primary-500"
+            className="not-prose border-b border-amber-500/90 no-underline dark:border-blue-600/90"
           >
             {heading.value}
-          </a>
+          </Link>
         </li>
       ))}
     </ul>

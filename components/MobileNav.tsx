@@ -37,7 +37,7 @@ export default function MobileNav() {
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 20 20"
           fill="currentColor"
-          className="text-gray-900 dark:text-gray-100"
+          className="text-slate-800 dark:text-slate-200"
         >
           <path
             fillRule="evenodd"
@@ -85,7 +85,7 @@ export default function MobileNav() {
                 href="/"
                 onClick={() => setNavShow(!navShow)}
                 className={classNames(
-                  "horizontal-underline font-bold tracking-widest text-gray-900 backdrop:text-2xl dark:text-gray-100",
+                  "horizontal-underline font-bold tracking-widest text-slate-800 backdrop:text-2xl dark:text-slate-200",
                   { "horizontal-underline-active": pathName === "/" }
                 )}
               >
@@ -101,7 +101,7 @@ export default function MobileNav() {
                     href={href}
                     onClick={() => setNavShow(!navShow)}
                     className={classNames(
-                      "horizontal-underline font-bold tracking-widest text-gray-900 backdrop:text-2xl dark:text-gray-100",
+                      "horizontal-underline font-bold tracking-widest text-slate-800 backdrop:text-2xl dark:text-slate-200",
                       { "horizontal-underline-active": active }
                     )}
                     aria-label={title}

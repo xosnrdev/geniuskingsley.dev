@@ -10,7 +10,7 @@ export default function Footer() {
   return (
     <SectionContainer>
       <footer>
-        <div className="mb-0 flex flex-col justify-start space-x-0 space-y-1.5 py-10 text-gray-500 dark:text-gray-400">
+        <div className="mb-0 flex flex-col justify-start space-x-0 space-y-1.5 py-10 text-slate-500 dark:text-slate-400">
           <Suspense fallback="loading...">
             <NowPlaying />
           </Suspense>
@@ -24,39 +24,44 @@ export default function Footer() {
             </ul>
             <ul className="flex cursor-pointer items-center space-x-5">
               <li>
-                <a
+                <Link
                   href={siteMetadata.linkedin}
                   target="_blank"
                   rel="noreferrer"
                   aria-label="linkedin"
                 >
                   <AiFillLinkedin className="sm:text-lg" />
-                </a>
+                </Link>
               </li>
               <li>
-                <a href={siteMetadata.github} target="_blank" rel="noreferrer" aria-label="github">
+                <Link
+                  href={siteMetadata.github}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="github"
+                >
                   <FaGithub className="sm:text-lg" />
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href={siteMetadata.twitter}
                   target="_blank"
                   rel="noreferrer"
                   aria-label="twitter"
                 >
                   <FaTwitter className="sm:text-lg" />
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href={siteMetadata.spotify}
                   target="_blank"
                   rel="noreferrer"
                   aria-label="spotify"
                 >
                   <FaSpotify className="sm:text-lg" />
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

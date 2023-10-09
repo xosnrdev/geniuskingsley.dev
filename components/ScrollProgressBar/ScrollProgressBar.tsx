@@ -9,5 +9,5 @@ export default function ScrollProgressBar() {
 
   useMotionValueEvent(scrollYProgress, "change", (v) => setWidth(v * 100));
 
-  return <div className="fixed top-0 z-40 h-1 bg-primary-500" style={{ width: width + "%" }}></div>;
+  return <div className="fixed top-0 z-40 h-1 bg-[#f59e0b]" style={{ width: width + "%" }}></div>;
 }

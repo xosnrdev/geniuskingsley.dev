@@ -69,7 +69,7 @@ export const socialLinks = [
   },
   {
     id: 9,
-    name: "Producthunt",
+    name: "ProductHunt",
     url: "https://www.producthunt.com/@xosnrdev",
     icon: FaProductHunt,
     status: "social",
