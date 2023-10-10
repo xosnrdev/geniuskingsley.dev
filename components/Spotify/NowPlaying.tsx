@@ -1,3 +1,4 @@
+import { getNowPlaying } from "@/lib/spotify";
 import { almarena } from "app/fonts/localFont";
 import Link from "next/link";
 import AnimatedBars from "./AnimatedBars";
@@ -5,26 +6,20 @@ import { Artist, NowPlayingSong } from "./types";
 
 async function fetchNowPlaying(): Promise<NowPlayingSong | null> {
   try {
-    const response = await fetch("https://geniuskingsley.dev/api/nowPlaying");
+    const response = await getNowPlaying();
 
     if (!response.ok || response.status === 204) {
+      console.log("An unknown error occurred while fetching now playing data");
       return null;
     }
 
-    const songData = await response.json();
-    console.log(songData);
-
-    const isPlaying = songData.is_playing;
-    const title = songData?.item?.name;
-    const artist = songData?.item?.artists.map((artist: Artist) => artist.name).join(", ");
-    const album = songData?.item?.album?.name;
-    const albumImageUrl = songData?.item?.album?.images[0]?.url;
-    const songUrl = songData?.item?.external_urls?.spotify;
-
-    if (!title || !artist || !album || !albumImageUrl || !songUrl) {
-      console.error("Some essential song data fields are missing");
-      return null;
-    }
+    const song = await response.json();
+    const isPlaying = song.is_playing;
+    const title = song.item.name;
+    const artist = song.item.artists.map((artist: Artist) => artist.name).join(", ");
+    const album = song.item.album.name;
+    const albumImageUrl = song.item.album.images[0].url;
+    const songUrl = song.item.external_urls.spotify;
 
     return {
       album,
@@ -69,22 +64,22 @@ export default async function NowPlaying() {
         <AnimatedBars />
         <div className="inline-flex max-w-[70%] items-center space-x-2 text-sm sm:max-w-[90%] sm:text-base">
           <Link
-            href={nowPlaying?.songUrl || ""}
+            href={nowPlaying.songUrl}
             className="inline-block truncate font-medium text-slate-800 dark:text-slate-200"
             target="_blank"
             rel="noopener noreferrer"
           >
-            {nowPlaying?.title}
+            {nowPlaying.title}
           </Link>
           <span className="mx-2 text-slate-500 dark:text-slate-300">{" – "}</span>
           <p className="inline-block truncate text-slate-500 dark:text-slate-300">
-            {nowPlaying?.artist}
+            {nowPlaying.artist}
           </p>
         </div>
       </div>
     );
   } catch (error) {
-    console.error(error);
+    console.error("NowPlaying :", error);
     return null;
   }
 }
