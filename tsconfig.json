@@ -36,7 +36,9 @@
     "**/*.tsx",
     "**/**/*.tsx|ts",
     ".contentlayer/generated",
-    ".next/types/**/*.ts"
+    ".next/types/**/*.ts",
+    "app/api/nowPlaying",
+    "app/api/topTracks"
   ],
   "exclude": ["node_modules"]
 }
