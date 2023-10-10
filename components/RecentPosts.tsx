@@ -13,7 +13,7 @@ export default function RecentPosts({ posts = [] }: RecentPosts) {
   const slicedPost = posts.slice(0, MAX_DISPLAY);
 
   return (
-    <div className={`pt-6 ${almarena.className}`}>
+    <div className={`mt-6 ${almarena.className}`}>
       <div className="divide-y divide-slate-200 dark:divide-slate-800">
         <h3 className="text-2xl font-bold leading-9 tracking-tight text-slate-800 dark:text-slate-200 sm:text-3xl sm:leading-10 md:text-4xl md:leading-14">
           Recent Posts
