@@ -38,8 +38,9 @@ export default function IsMobileView({
                 <Image
                   src={`/static/images/project/${src}`}
                   alt={title}
-                  height={197}
+                  height={196}
                   width={350}
+                  priority
                   className="pointer-events-none w-full max-w-sm rounded-t-2xl object-contain"
                 />
 
