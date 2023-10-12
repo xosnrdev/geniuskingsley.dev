@@ -7,12 +7,17 @@ import ProjectItem from "./ProjectItem";
 import ProjectPreview from "./ProjectPreview";
 import { projects } from "./constants";
 import { ProjectModal } from "./types";
+import IsMobileView from "./Modal";
 
 const BREAKPOINTS = { mobile: 0, tablet: 768, desktop: 1280 };
 
 export default function Projects() {
   const { breakpoint } = useBreakpoint(BREAKPOINTS);
   const [modal, setModal] = useState<ProjectModal>({ active: false, index: 0 });
+
+  const handleModalClose = () => {
+    setModal({ ...modal, active: false });
+  };
 
   return (
     <>
@@ -32,6 +37,17 @@ export default function Projects() {
           />
         </motion.div>
       ))}
+
+      {breakpoint !== "desktop" && modal.active && (
+        <IsMobileView
+          src={projects[modal.index].src} // Supply imageUrl
+          title={projects[modal.index].title}
+          url={projects[modal.index].url}
+          github={projects[modal.index].github} // Supply github URL
+          isOpen={modal.active} // Control the modal's open state
+          handleClose={handleModalClose} // Allow the modal to be closed
+        />
+      )}
       {breakpoint === "desktop" && <ProjectPreview modal={modal} projects={projects} />}
     </>
   );

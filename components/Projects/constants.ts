@@ -7,6 +7,7 @@ export const projects: Project[] = [
     color: "#f1f5f9",
     url: "https://github.com/world-wide-techies/P2PCoder",
     role: "Software Developer",
+    github: "https://github.com/world-wide-techies/P2PCoder",
   },
   {
     title: "ThreeJS Shirt Customizer",
@@ -14,6 +15,7 @@ export const projects: Project[] = [
     color: "#f1f5f9",
     url: "https://three.jscodespace.com",
     role: "Software Developer",
+    github: "https://github.com/xosnrdev/threejs-shirt-customizer",
   },
   {
     title: "Annon Chat - World Wide Techies Project",
@@ -21,5 +23,6 @@ export const projects: Project[] = [
     color: "#f1f5f9",
     url: "https://annon-chat.vercel.app/",
     role: "Software Developer",
+    github: "https://github.com/world-wide-techies/annon_chat",
   },
 ];

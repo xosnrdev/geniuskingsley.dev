@@ -1,6 +1,9 @@
+import { almarena } from "app/fonts/localFont";
 import Link from "next/link";
 import { ProjectModal } from "./types";
-import { almarena } from "app/fonts/localFont";
+import useBreakpoint from "use-breakpoint";
+
+const BREAKPOINTS = { mobile: 0, tablet: 768, desktop: 1280 };
 
 interface ProjectProps {
   index: number;
@@ -11,6 +14,8 @@ interface ProjectProps {
 }
 
 export default function ProjectItem({ index, title, url, role, setModal }: ProjectProps) {
+  const { breakpoint } = useBreakpoint(BREAKPOINTS);
+
   return (
     <Link
       href={url}
@@ -20,6 +25,12 @@ export default function ProjectItem({ index, title, url, role, setModal }: Proje
       }}
       onMouseLeave={() => {
         setModal({ active: false, index });
+      }}
+      onClick={(e) => {
+        if (breakpoint === "mobile") {
+          e.preventDefault();
+          setModal({ active: true, index });
+        }
       }}
       className={`group flex w-full items-center justify-between border-b px-4 py-10 sm:px-10 sm:py-16 ${almarena.className}`}
       rel="noreferrer"
