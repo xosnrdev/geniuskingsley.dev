@@ -28,7 +28,7 @@ export default function IsMobileView({
         <div className={`${almarena.className} transition ease-in sm:hidden`}>
           <div className="fixed inset-0 bg-slate-950 bg-opacity-50 transition duration-300">
             <div className="flex h-screen flex-col items-center justify-center px-2">
-              <div className="relative overflow-hidden rounded-2xl bg-white shadow-2xl">
+              <div className="relative max-w-sm rounded-2xl bg-white shadow-2xl">
                 <AiOutlineClose
                   onClick={handleClose}
                   size={30}
@@ -38,9 +38,9 @@ export default function IsMobileView({
                 <Image
                   src={`/static/images/project/${src}`}
                   alt={title}
-                  height={200}
-                  width={400}
-                  className="pointer-events-none rounded-t-2xl object-contain hover:scale-110"
+                  height={197}
+                  width={350}
+                  className="pointer-events-none w-full max-w-sm rounded-t-2xl object-contain"
                 />
 
                 <div className="flex flex-col space-y-4 px-4 py-2">
