@@ -27,7 +27,7 @@ export default function AuthorLayout({ children, content }: Props) {
           <div className="flex flex-col gap-y-2">
             <div className="text-slate-800 dark:text-slate-200">
               <Link
-                href="https://drive.google.com/file/d/1Q0RQIEV2jaVrEQJ22BjWmJXCHGTrzIgv/view?usp=drivesdk"
+                href={"/resume/chidera.pdf"}
                 rel="noreferrer noopener"
                 target="_blank"
                 className="css-1tzfalu text-center font-semibold"
