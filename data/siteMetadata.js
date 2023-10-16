@@ -14,7 +14,7 @@ const siteMetadata = {
   email: "chidera@geniuskingsley.dev",
   github: "https://github.com/xosnrdev",
   twitter: "https://twitter.com/xosnrdev",
-  linkedin: "https://www.linkedin.com/in/xosnrdev/",
+  linkedin: "https://www.linkedin.com/in/snrjsdev/",
   spotify: "https://open.spotify.com/user/31wuvc3q22pqbn7m5smst6jsbxae",
   locale: "en-US",
   comment: {
