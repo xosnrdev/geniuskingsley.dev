@@ -27,7 +27,7 @@ export default function AuthorLayout({ children, content }: Props) {
           <div className="flex flex-col gap-y-2">
             <div className="text-slate-800 dark:text-slate-200">
               <Link
-                href={"/resume/chidera.pdf"}
+                href={"/resume.pdf"}
                 rel="noreferrer noopener"
                 target="_blank"
                 className="css-1tzfalu text-center font-semibold"
