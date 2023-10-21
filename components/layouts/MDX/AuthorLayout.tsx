@@ -48,11 +48,9 @@ export default function AuthorLayout({ children, content }: Props) {
         </div>
       </div>
       <p className="prose text-slate-600/90 dark:prose-dark lg:prose-lg dark:text-slate-200/90 lg:min-w-full xl:col-span-2">
-        I am a Software Engineer with a background in Mechanical Engineering. Over the years, I have
-        shifted my focus to developing web applications, gaining proficiency in languages such as
-        JavaScript and Python. In my recent role at World Wide Techies, my responsibilities
-        encompassed enhancing Firebase functionalities through JavaScript and crafting user-centric
-        components with React for live streaming platforms.
+        I'm a Software Engineer with hands-on experience. I've improved user engagement and
+        productivity at previous roles. Skilled in React, JavaScript, and AI. I'm open to new
+        opportunities in tech. Let's connect and explore potential collaborations.
       </p>
       <div className="prose mt-6 space-y-6 text-slate-600/90 dark:prose-dark dark:text-slate-200/90 md:text-lg xl:col-span-2">
         {children}
