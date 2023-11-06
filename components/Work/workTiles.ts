@@ -13,7 +13,7 @@ export const workTiles: WorkTile[] = [
     description: ``,
     title: `Portfolio - Projects`,
     image: {
-      src: '/static/images/merged.png',
+      src: '/static/images/project/all-project.webp',
       width: 600,
       height: 770,
     },
@@ -23,7 +23,7 @@ export const workTiles: WorkTile[] = [
     A peer-2-peer coding editor that helps developer share coding space, particularly for coding mentors and tutoring.`,
     title: 'P2PCoder',
     image: {
-      src: '/static/images/p2pcoder.gif',
+      src: '/static/images/project/p2pcoder-project.webp',
       width: 600,
       height: 554,
     },
@@ -32,7 +32,7 @@ export const workTiles: WorkTile[] = [
     description: `A web-based application that aims to redefine the way you personalize your clothing, with DALLE AI the application generates and integrates images, enriching the customization process.`,
     title: 'ThreeJS Shirt Customizer',
     image: {
-      src: 'https://res.cloudinary.com/dc5x1aox7/image/upload/v1694377448/IMG_4821_i1p5pu.png',
+      src: '/static/images/project/threejs-project.webp',
       width: 600,
       height: 717,
     },
@@ -41,7 +41,7 @@ export const workTiles: WorkTile[] = [
     description: `An Anonymous Chat platform that connects individuals to converse allowing users to engage in real-time, anonymous conversations with other users.`,
     title: 'Annon Chat',
     image: {
-      src: '/static/images/annon_chat.png',
+      src: '/static/images/project/annon-project.webp',
       width: 600,
       height: 717,
     },

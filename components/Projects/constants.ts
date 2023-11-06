@@ -3,7 +3,7 @@ import { Project } from './types';
 export const projects: Project[] = [
   {
     title: 'P2PCoder',
-    src: 'p2pcoder.png',
+    src: 'p2pcoder-project.webp',
     color: '#ddd6fe',
     url: '',
     role: 'Frontend Developer',
@@ -11,7 +11,7 @@ export const projects: Project[] = [
   },
   {
     title: 'ThreeJS Shirt Customizer',
-    src: 'threejs.png',
+    src: 'threejs-project.webp',
     color: '#fae8ff',
     url: 'https://threejs-design.vercel.app',
     role: 'Full-Stack Developer',
@@ -19,7 +19,7 @@ export const projects: Project[] = [
   },
   {
     title: 'Annon Chat  ',
-    src: 'annon_chat.png',
+    src: 'annon-project.webp',
     color: '#fee2e2',
     url: 'https://annon-chat.vercel.app/',
     role: 'Frontend Developer',
