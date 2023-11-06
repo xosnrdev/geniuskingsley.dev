@@ -1,9 +1,9 @@
-"use client";
+'use client';
 
-import { Command } from "cmdk";
-import { useEffect, useState } from "react";
-import CommandItem from "./CommandItem";
-import usePaletteOptions from "./usePaletteOptions";
+import { Command } from 'cmdk';
+import { useEffect, useState } from 'react';
+import CommandItem from './CommandItem';
+import usePaletteOptions from './usePaletteOptions';
 
 export default function CommandPalette() {
   const [open, setOpen] = useState(false);
@@ -12,13 +12,13 @@ export default function CommandPalette() {
 
   useEffect(() => {
     const down = (e: KeyboardEvent) => {
-      if (e.key === "k" && e.metaKey) {
+      if (e.key === 'k' && e.metaKey) {
         setOpen((open) => !open);
       }
     };
 
-    document.addEventListener("keydown", down);
-    return () => document.removeEventListener("keydown", down);
+    document.addEventListener('keydown', down);
+    return () => document.removeEventListener('keydown', down);
   }, []);
 
   return (

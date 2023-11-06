@@ -1,35 +1,33 @@
-"use client";
+'use client';
 
-import headerNavLinks from "@/data/headerNavLinks";
-import classNames from "classnames";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-import CommandPalette from "./CommandPalette/CommandPalette";
-import MobileNav from "./MobileNav";
-import SectionContainer from "./SectionContainer";
-import ThemeSwitch from "./ThemeSwitch";
-import { almarena } from "app/fonts/localFont";
+import classNames from 'classnames';
+import headerNavLinks from 'content/headerNavLinks';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import CommandPalette from './CommandPalette/CommandPalette';
+import MobileNav from './MobileNav';
+import SectionContainer from './SectionContainer';
+import ThemeSwitch from './ThemeSwitch';
 
 export default function Header() {
   const pathName = usePathname();
 
   return (
     <SectionContainer>
-      <header className={`z-40 bg-transparent py-5 md:py-10 ${almarena.className}`}>
+      <header className="z-40 bg-transparent py-5 md:py-10">
         <div className="mx-auto flex max-w-5xl items-center justify-between">
           <div>
             <Link
               href="/"
-              className="font-cabinet flex items-center justify-between text-4xl"
-              aria-label="Home"
+              className={classNames(
+                'horizontal-underline hidden text-3xl font-extrabold sm:block',
+                {
+                  'horizontal-underline-active': pathName === '/',
+                }
+              )}
+              aria-label="g."
             >
-              <div
-                className={classNames("horizontal-underline hidden font-bold sm:block", {
-                  "horizontal-underline-active": pathName === "/",
-                })}
-              >
-                g.
-              </div>
+              g.
             </Link>
           </div>
           <div className="flex items-center space-x-3 text-base leading-5">
@@ -41,12 +39,12 @@ export default function Header() {
                     prefetch
                     key={title}
                     href={href}
-                    className={classNames("horizontal-underline", {
-                      "horizontal-underline-active": active,
+                    className={classNames('horizontal-underline text-base', {
+                      'horizontal-underline-active': active,
                     })}
                     aria-label={title}
                   >
-                    <span className="font-bold tracking-wide text-slate-800 dark:text-slate-200">
+                    <span className="font-semibold tracking-wide text-gray-900 dark:text-gray-100">
                       {title}
                     </span>
                   </Link>

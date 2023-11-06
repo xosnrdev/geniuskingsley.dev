@@ -1,18 +1,17 @@
-import { writeFileSync, mkdirSync } from "fs";
-import path from "path";
-import GithubSlugger from "github-slugger";
-import { escape } from "./htmlEscaper.mjs";
-import siteMetadata from "../data/siteMetadata.js";
-import { allBlogs } from "../.contentlayer/generated/index.mjs";
+import { writeFileSync, mkdirSync } from 'fs';
+import path from 'path';
+import GithubSlugger from 'github-slugger';
+import { escape } from './htmlEscaper.mjs';
+import siteMetadata from '../content/siteMetadata.js';
+import { allBlogs } from '../.contentlayer/generated/index.mjs';
 
-const slugger = new GithubSlugger();
 export async function getAllTags() {
   const tagCount = {};
   // Iterate through each post, putting all found tags into `tags`
   allBlogs.forEach((file) => {
     if (file.tags && file.draft !== true) {
       file.tags.forEach((tag) => {
-        const formattedTag = slugger.slug(tag);
+        const formattedTag = GithubSlugger.slug(tag);
         if (formattedTag in tagCount) {
           tagCount[formattedTag] += 1;
         } else {
@@ -33,11 +32,11 @@ const generateRssItem = (post) => `
     ${post.summary && `<description>${escape(post.summary)}</description>`}
     <pubDate>${new Date(post.date).toUTCString()}</pubDate>
     <author>${siteMetadata.email} (${siteMetadata.author})</author>
-    ${post.tags && post.tags.map((t) => `<category>${t}</category>`).join("")}
+    ${post.tags && post.tags.map((t) => `<category>${t}</category>`).join('')}
   </item>
 `;
 
-const generateRss = (posts, page = "feed.xml") => `
+const generateRss = (posts, page = 'feed.xml') => `
   <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
       <title>${escape(siteMetadata.title)}</title>
@@ -46,9 +45,9 @@ const generateRss = (posts, page = "feed.xml") => `
       <language>${siteMetadata.language}</language>
       <managingEditor>${siteMetadata.email} (${siteMetadata.author})</managingEditor>
       <webMaster>${siteMetadata.email} (${siteMetadata.author})</webMaster>
-      <lastBuildDate>${new Date(posts[0]?.date ?? new Date()).toUTCString()}</lastBuildDate>
+      <lastBuildDate>${new Date(posts[0].date).toUTCString()}</lastBuildDate>
       <atom:link href="${siteMetadata.siteUrl}/${page}" rel="self" type="application/rss+xml"/>
-      ${posts.map(generateRssItem).join("")}
+      ${posts.map(generateRssItem).join('')}
     </channel>
   </rss>
 `;
@@ -57,7 +56,7 @@ async function generate() {
   // RSS for blog post
   if (allBlogs.length > 0) {
     const rss = generateRss(allBlogs);
-    writeFileSync("./public/feed.xml", rss);
+    writeFileSync('./public/feed.xml', rss);
   }
 
   // RSS for tags
@@ -65,14 +64,13 @@ async function generate() {
   if (allBlogs.length > 0) {
     const tags = await getAllTags();
     for (const tag of Object.keys(tags)) {
-      const filteredPosts = allBlogs.filter((post) =>
-        post.tags.map((t) => slugger.slug(t)).includes(tag)
+      const filteredPosts = allBlogs.filter(
+        (post) => post.draft !== true && post.tags.map((t) => GithubSlugger.slug(t)).includes(tag)
       );
-
       const rss = generateRss(filteredPosts, `tags/${tag}/feed.xml`);
-      const rssPath = path.join("public", "tags", tag);
+      const rssPath = path.join('public', 'tags', tag);
       mkdirSync(rssPath, { recursive: true });
-      writeFileSync(path.join(rssPath, "feed.xml"), rss);
+      writeFileSync(path.join(rssPath, 'feed.xml'), rss);
     }
   }
 }

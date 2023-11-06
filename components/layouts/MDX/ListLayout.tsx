@@ -1,10 +1,10 @@
-"use client";
+'use client';
 
-import Pagination from "@/components/Pagination";
-import PostCard from "@/components/PostCard";
-import { CoreContent } from "@/lib/utils/contentlayer";
-import type { Blog } from "contentlayer/generated";
-import { ComponentProps, useState } from "react";
+import Pagination from '@/components/Pagination';
+import PostCard from '@/components/PostCard';
+import { CoreContent } from '@/lib/utils/contentlayer';
+import type { Blog } from 'contentlayer/generated';
+import { ComponentProps, useState } from 'react';
 
 interface Props {
   posts: CoreContent<Blog>[];
@@ -14,18 +14,19 @@ interface Props {
 }
 
 export default function ListLayout({ posts, title, initialDisplayPosts = [], pagination }: Props) {
-  const [searchValue, setSearchValue] = useState("");
+  const [searchValue, setSearchValue] = useState('');
   const filteredBlogPosts = posts.filter((post) => {
-    const searchContent = post.title + post.summary + post.tags?.join(" ");
+    const searchContent = post.title + post.summary + post.tags?.join(' ');
     return searchContent.toLowerCase().includes(searchValue.toLowerCase());
   });
 
+  // If initialDisplayPosts exist, display it if no searchValue is specified.
   const displayPosts =
     initialDisplayPosts.length > 0 && !searchValue ? initialDisplayPosts : filteredBlogPosts;
 
   return (
     <>
-      <div className="space-y-2 rounded-lg pb-3 pt-8 md:space-y-5">
+      <div className="space-y-2 rounded-lg pt-8 pb-3 md:space-y-5">
         <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-5xl md:leading-14">
           {title}
         </h1>

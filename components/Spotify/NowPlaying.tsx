@@ -1,22 +1,21 @@
-import { getNowPlaying } from "@/lib/spotify";
-import { almarena } from "app/fonts/localFont";
-import Link from "next/link";
-import AnimatedBars from "./AnimatedBars";
-import { Artist, NowPlayingSong } from "./types";
+import { getNowPlaying } from '@/lib/spotify';
+import Link from 'next/link';
+import AnimatedBars from './AnimatedBars';
+import { Artist, NowPlayingSong } from './types';
 
 async function fetchNowPlaying(): Promise<NowPlayingSong | null> {
   try {
     const response = await getNowPlaying();
 
     if (!response.ok || response.status === 204) {
-      console.log("An unknown error occurred while fetching now playing data");
+      console.log('An unknown error occurred while fetching now playing data');
       return null;
     }
 
     const song = await response.json();
     const isPlaying = song.is_playing;
     const title = song.item.name;
-    const artist = song.item.artists.map((artist: Artist) => artist.name).join(", ");
+    const artist = song.item.artists.map((artist: Artist) => artist.name).join(', ');
     const album = song.item.album.name;
     const albumImageUrl = song.item.album.images[0].url;
     const songUrl = song.item.external_urls.spotify;
@@ -30,7 +29,7 @@ async function fetchNowPlaying(): Promise<NowPlayingSong | null> {
       title,
     };
   } catch (error) {
-    console.error("Error fetching now playing data:", error);
+    console.error('Error fetching now playing data:', error);
     return null;
   }
 }
@@ -49,37 +48,35 @@ export default async function NowPlaying() {
             />
           </svg>
           <div className="inline-flex space-x-1">
-            <p className="font-medium text-slate-800 dark:text-slate-200">Not Playing</p>
-            <span className="text-slate-500 dark:text-slate-300">{" – "}</span>
-            <p className="text-slate-500 dark:text-slate-300">Spotify</p>
+            <p className="font-medium text-gray-800 dark:text-gray-200">Not Playing</p>
+            <span className="text-gray-500 dark:text-gray-300">{' – '}</span>
+            <p className="text-gray-500 dark:text-gray-300">Spotify</p>
           </div>
         </div>
       );
     }
 
     return (
-      <div
-        className={`mt-4 flex items-center justify-center space-x-2 sm:flex-row sm:justify-start sm:space-x-2 ${almarena.className}`}
-      >
+      <div className="mt-4 flex items-center justify-center space-x-2 sm:flex-row sm:justify-start sm:space-x-2">
         <AnimatedBars />
         <div className="inline-flex max-w-[70%] items-center space-x-2 text-sm sm:max-w-[90%] sm:text-base">
           <Link
+            className="inline-block truncate font-medium text-gray-800 dark:text-gray-200"
             href={nowPlaying.songUrl}
-            className="inline-block truncate font-medium text-slate-800 dark:text-slate-200"
             target="_blank"
             rel="noopener noreferrer"
           >
             {nowPlaying.title}
           </Link>
-          <span className="mx-2 text-slate-500 dark:text-slate-300">{" – "}</span>
-          <p className="inline-block truncate text-slate-500 dark:text-slate-300">
+          <span className="mx-2 text-gray-500 dark:text-gray-300">{' – '}</span>
+          <p className="inline-block truncate text-gray-500 dark:text-gray-300">
             {nowPlaying.artist}
           </p>
         </div>
       </div>
     );
   } catch (error) {
-    console.error("NowPlaying :", error);
+    console.error('NowPlaying :', error);
     return null;
   }
 }

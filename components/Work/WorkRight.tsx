@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { ReactNode } from 'react';
 
 export interface WorkProps {
   children: ReactNode;
@@ -10,7 +10,7 @@ export function WorkRight({ children, progress }: WorkProps) {
 
   return (
     <div
-      className="flex flex-1 justify-center lg:h-screen lg:items-center"
+      className="flex h-screen flex-1 justify-center lg:items-center"
       style={{ transform: `translateY(${translateY}px)` }}
     >
       <div className="w-full max-w-md px-10 pt-10 md:px-0 lg:pt-0">{children}</div>

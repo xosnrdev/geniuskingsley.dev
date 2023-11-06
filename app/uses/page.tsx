@@ -1,15 +1,15 @@
-import { MDXLayoutRenderer } from "@/components/MDXComponents";
-import UsesLayout from "@/layouts/MDX/UsesLayout";
-import MainLayout from "@/layouts/MainLayout";
-import { allAuthors } from "contentlayer/generated";
+import { MDXLayoutRenderer } from '@/components/MDXComponents';
+import UsesLayout from '@/layouts/MDX/UsesLayout';
+import MainLayout from '@/layouts/MainLayout';
+import { allAuthors } from 'contentlayer/generated';
 
 export const metadata = {
-  title: "Tools",
-  description: "My productivity tools",
+  title: 'Uses - Success Kingsley',
+  description: 'What I Use - Success Kingsley',
 };
 
 export default function Uses() {
-  const author = allAuthors.find((p) => p.slug === "uses");
+  const author = allAuthors.find((p) => p.slug === 'uses');
 
   if (!author) {
     return null;

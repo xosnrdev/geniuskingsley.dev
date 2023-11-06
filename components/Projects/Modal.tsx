@@ -1,9 +1,8 @@
-"use client";
+'use client';
 
-import { almarena } from "app/fonts/localFont";
-import Image from "next/image";
-import Link from "next/link";
-import { AiOutlineClose } from "react-icons/ai";
+import Image from 'next/image';
+import Link from 'next/link';
+import { AiOutlineClose } from 'react-icons/ai';
 
 interface IsMobileViewProps {
   src: string;
@@ -25,7 +24,7 @@ export default function IsMobileView({
   return (
     <>
       {isOpen && (
-        <div className={`${almarena.className} transition ease-in sm:hidden`}>
+        <div className="transition ease-in sm:hidden">
           <div className="fixed inset-0 bg-slate-950 bg-opacity-50 transition duration-300">
             <div className="flex h-screen flex-col items-center justify-center px-2">
               <div className="relative max-w-sm rounded-2xl bg-white shadow-2xl">

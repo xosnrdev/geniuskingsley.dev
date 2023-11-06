@@ -1,9 +1,9 @@
-"use client";
+'use client';
 
-import rocket from "logrocket";
+import rocket from 'logrocket';
 
 export default function LogRocket() {
-  const logrocketId = process.env.NEXT_PUBLIC_LOGROCKET_ID || "";
+  const logrocketId = process.env.NEXT_PUBLIC_LOGROCKET_ID || '';
 
   setTimeout(() => {
     rocket.init(logrocketId);

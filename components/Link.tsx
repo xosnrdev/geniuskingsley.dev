@@ -1,15 +1,15 @@
-"use client";
+'use client';
 
-import { LinkButton } from "@dlarroder/playground";
-import Link from "next/link";
-import { AnchorHTMLAttributes, DetailedHTMLProps } from "react";
+import { LinkButton } from '@dlarroder/playground';
+import Link from 'next/link';
+import { AnchorHTMLAttributes, DetailedHTMLProps } from 'react';
 
 const CustomLink = ({
   href,
   ...rest
 }: DetailedHTMLProps<AnchorHTMLAttributes<HTMLAnchorElement>, HTMLAnchorElement>) => {
-  const isInternalLink = href && href.startsWith("/");
-  const isAnchorLink = href && href.startsWith("#");
+  const isInternalLink = href && href.startsWith('/');
+  const isAnchorLink = href && href.startsWith('#');
 
   if (isInternalLink) {
     return (

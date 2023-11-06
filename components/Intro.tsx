@@ -1,8 +1,7 @@
-"use client";
+'use client';
 
-import { useLenis } from "@studio-freight/react-lenis";
-import { useRef, useState } from "react";
-import { almarena } from "app/fonts/localFont";
+import { useLenis } from '@studio-freight/react-lenis';
+import { useRef, useState } from 'react';
 
 function opacityForBlock(sectionProgress: number, blockNumber: number) {
   const progress = sectionProgress - blockNumber;
@@ -17,7 +16,7 @@ function opacityForBlock(sectionProgress: number, blockNumber: number) {
 export default function Intro() {
   const [scrollY, setScrollY] = useState(0);
 
-  useLenis(({ scroll }: any) => {
+  useLenis(({ scroll }) => {
     setScrollY(scroll);
   });
 
@@ -41,24 +40,27 @@ export default function Intro() {
   return (
     <div
       ref={refContainer}
-      className={`relative z-10 bg-black text-slate-200 dark:bg-white  dark:text-slate-950 ${almarena.className}`}
+      className="relative z-10 bg-black text-white dark:bg-white  dark:text-black"
       id="intro"
     >
-      <div className="mx-auto flex min-h-screen max-w-5xl flex-col items-center justify-center text-4xl font-bold md:text-5xl lg:max-w-4xl lg:text-6xl">
-        <div className="space-y-4 px-2 leading-[1.5] lg:space-y-0">
-          <p className="introText" style={{ opacity: opacityForBlock(progress, 0) }}>
+      <div className="mx-auto flex min-h-screen max-w-5xl flex-col items-center justify-center px-10 py-24 text-4xl font-semibold tracking-tight md:py-28 md:text-6xl lg:px-20 lg:py-3 lg:text-7xl">
+        <div className="leading-[1.15]">
+          <div className="introText" style={{ opacity: opacityForBlock(progress, 0) }}>
             I love the art of coding.
-          </p>
-          <p
+          </div>
+          <span
             className="introText inline-block after:content-['_']"
             style={{ opacity: opacityForBlock(progress, 1) }}
           >
-            I use my passion & self-driven skills to build digital products and experiences.
-          </p>
-          <p className="introText inline-block" style={{ opacity: opacityForBlock(progress, 2) }}>
+            I use my passion and skills to build digital products and experiences.
+          </span>
+          <span
+            className="introText inline-block"
+            style={{ opacity: opacityForBlock(progress, 2) }}
+          >
             I've found my passion in 'Refactoring UI'. Crafting experiences that not only look good
             but feel right is what I'm all about.
-          </p>
+          </span>
         </div>
       </div>
     </div>

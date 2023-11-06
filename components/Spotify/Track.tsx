@@ -1,5 +1,5 @@
-import Link from "next/link";
-import { Song } from "./types";
+import Link from 'next/link';
+import { Song } from './types';
 
 interface TrackProps {
   ranking: number;

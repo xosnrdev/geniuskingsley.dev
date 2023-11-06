@@ -1,4 +1,4 @@
-import { WorkProps } from "./WorkRight";
+import { WorkProps } from './WorkRight';
 
 export function WorkLeft({ children, progress }: WorkProps) {
   let translateY = Math.max(0, 50 - progress * 3 * 50);
@@ -9,10 +9,10 @@ export function WorkLeft({ children, progress }: WorkProps) {
 
   return (
     <div
-      className="flex h-[22.5vh] flex-col items-center justify-center text-3xl lg:h-auto lg:text-3xl"
+      className="flex h-[30vh] flex-col items-center justify-center text-3xl lg:h-auto lg:text-3xl"
       style={{ transform: `translateY(${translateY}px)` }}
     >
-      <div className="px-2 leading-10 text-slate-200">{children}</div>
+      <div className="leading-10 text-white">{children}</div>
     </div>
   );
 }

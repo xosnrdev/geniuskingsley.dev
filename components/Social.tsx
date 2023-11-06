@@ -1,5 +1,5 @@
-import { socialLinks } from "@/data/social";
-import Link from "next/link";
+import { socialLinks } from 'content/social';
+import Link from 'next/link';
 
 export default function Social({ type }: { type: string }) {
   return (
@@ -17,7 +17,7 @@ export default function Social({ type }: { type: string }) {
               <value.icon
                 className="h-5 w-5 flex-shrink-0 text-base text-slate-500 duration-300 group-hover:text-slate-800 group-hover:dark:text-slate-200"
                 aria-hidden="true"
-              />{" "}
+              />{' '}
               &nbsp;
               {value.name}
             </Link>

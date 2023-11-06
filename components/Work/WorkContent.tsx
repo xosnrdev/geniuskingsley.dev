@@ -1,9 +1,8 @@
-import Image from "next/image";
-import { WorkContainer } from "./WorkContainer";
-import { WorkLeft } from "./WorkLeft";
-import { WorkRight } from "./WorkRight";
-import { WorkTile } from "./workTiles";
-import { almarena } from "app/fonts/localFont";
+import Image from 'next/image';
+import { WorkContainer } from './WorkContainer';
+import { WorkLeft } from './WorkLeft';
+import { WorkRight } from './WorkRight';
+import { WorkTile } from './workTiles';
 
 interface WorkContentProps {
   work: WorkTile;
@@ -16,13 +15,13 @@ export default function WorkContent({ work, progress = 0 }: WorkContentProps) {
   return (
     <WorkContainer>
       <WorkLeft progress={progress}>
-        <div className={`px-2 text-center ${almarena.className}`}>
-          <h5 className="text-3xl font-bold md:text-4xl xl:text-5xl">{title}</h5>
-          <p className="mt-2 text-xl font-light md:text-xl xl:text-xl">{description}</p>
-        </div>
+        <div className="text-center mx-2">
+          <div className="text-4xl font-bold md:text-5xl xl:text-6xl">{title}</div>
+          <span className="text-xl tracking-tight md:text-2xl xl:text-3xl">{description}</span>
+        </div>{' '}
       </WorkLeft>
       <WorkRight progress={progress}>
-        <div className="drop-shadow-2xl lg:mt-12">
+        <div className="drop-shadow-2xl sm:mt-10 md:mt-24">
           <Image src={image.src} alt={title} width={image.width} height={image.height} />
         </div>
       </WorkRight>

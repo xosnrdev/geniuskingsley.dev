@@ -1,6 +1,6 @@
-"use client";
+'use client';
 
-import { DetailedHTMLProps, HTMLAttributes, useRef, useState } from "react";
+import { DetailedHTMLProps, HTMLAttributes, useRef, useState } from 'react';
 
 const Pre = ({ children }: DetailedHTMLProps<HTMLAttributes<HTMLPreElement>, HTMLPreElement>) => {
   const textInput = useRef<HTMLDivElement>(null);
@@ -28,8 +28,8 @@ const Pre = ({ children }: DetailedHTMLProps<HTMLAttributes<HTMLPreElement>, HTM
         <button
           aria-label="Copy code"
           type="button"
-          className={`absolute right-2 top-2 h-8 w-8 rounded border-2 bg-slate-700 p-1 dark:bg-slate-800 ${
-            copied ? "border-sky-400 focus:border-sky-400 focus:outline-none" : "border-gray-300"
+          className={`absolute right-2 top-2 h-8 w-8 rounded border-2 bg-gray-700 p-1 dark:bg-gray-800 ${
+            copied ? 'border-sky-400 focus:border-sky-400 focus:outline-none' : 'border-gray-300'
           }`}
           onClick={onCopy}
         >
@@ -38,7 +38,7 @@ const Pre = ({ children }: DetailedHTMLProps<HTMLAttributes<HTMLPreElement>, HTM
             viewBox="0 0 24 24"
             stroke="currentColor"
             fill="none"
-            className={copied ? "text-sky-400" : "text-gray-300"}
+            className={copied ? 'text-sky-400' : 'text-gray-300'}
           >
             {copied ? (
               <>

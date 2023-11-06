@@ -1,13 +1,13 @@
-"use client";
+'use client';
 
-import type { Authors } from "contentlayer/generated";
-import Image from "next/image";
-import Link from "next/link";
-import { ReactNode } from "react";
+import type { Authors } from 'contentlayer/generated';
+import Image from 'next/image';
+import Link from 'next/link';
+import { ReactNode } from 'react';
 
 interface Props {
   children: ReactNode;
-  content: Omit<Authors, "_id" | "_raw" | "body">;
+  content: Omit<Authors, '_id' | '_raw' | 'body'>;
 }
 
 export default function AuthorLayout({ children, content }: Props) {
@@ -15,44 +15,41 @@ export default function AuthorLayout({ children, content }: Props) {
 
   return (
     <div className="pt-8">
-      <div className="flex flex-col-reverse items-center justify-between sm:flex-row">
-        <div className="text-clip text-center sm:text-left">
-          <h1 className="text-xl font-extrabold text-blue-600/90 md:text-3xl lg:text-4xl">
-            {name || ""}
-          </h1>
-          <h2 className="my-1 text-base capitalize text-slate-600/90 dark:text-slate-200/90 md:text-lg">
-            {occupation}{" "}
-            <span className="font-semibold text-slate-800 dark:text-slate-200"> {company}</span>
+      <div className="mb-8 flex flex-col-reverse items-center justify-between sm:flex-row sm:items-center">
+        <div className="text-center sm:text-left lg:space-y-1">
+          <h1 className="text-xl font-bold md:text-3xl lg:text-4xl">{name}</h1>
+          <h2 className="text-sm font-normal md:text-base">
+            {occupation} <span className="font-semibold">{company}</span>
           </h2>
           <div className="flex flex-col gap-y-2">
             <div className="text-slate-800 dark:text-slate-200">
               <Link
-                href={"/resume.pdf"}
+                href={'/resume.pdf'}
                 rel="noreferrer noopener"
                 target="_blank"
                 className="css-1tzfalu text-center font-semibold"
               >
-                View Resume{" "}
+                View Resume{' '}
               </Link>
             </div>
           </div>
         </div>
-        <div className="rounded-full border-4 border-blue-600/90">
+        <div>
           <Image
-            src={avatar || ""}
+            src={avatar || ''}
             height={125}
             width={125}
             alt={name}
-            className="pointer-events-none rounded-full object-scale-down grayscale"
+            className="rounded-full object-scale-down grayscale select-none pointer-events-none"
           />
         </div>
       </div>
-      <p className="prose text-slate-600/90 dark:prose-dark lg:prose-lg dark:text-slate-200/90 lg:min-w-full xl:col-span-2">
+      <p className="prose max-w-none mx-auto pb-8 text-sm dark:prose-dark md:text-lg xl:col-span-2">
         I'm a Software Engineer with hands-on experience. I've improved user engagement and
         productivity at previous roles. Skilled in React, JavaScript, and AI. I'm open to new
         opportunities in tech. Let's connect and explore potential collaborations.
       </p>
-      <div className="prose mt-6 space-y-6 text-slate-600/90 dark:prose-dark dark:text-slate-200/90 md:text-lg xl:col-span-2">
+      <div className="prose max-w-none mx-auto text-sm dark:prose-dark md:text-lg xl:col-span-2">
         {children}
       </div>
     </div>

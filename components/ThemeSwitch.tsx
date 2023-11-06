@@ -1,9 +1,9 @@
-"use client";
+'use client';
 
-import { motion } from "framer-motion";
-import { useTheme } from "next-themes";
-import { useEffect, useState } from "react";
-import { BsMoonFill, BsSunFill } from "react-icons/bs";
+import { motion } from 'framer-motion';
+import { useTheme } from 'next-themes';
+import { useEffect, useState } from 'react';
+import { BsMoonFill, BsSunFill } from 'react-icons/bs';
 
 const ThemeSwitch = () => {
   const [mounted, setMounted] = useState(false);
@@ -24,7 +24,7 @@ const ThemeSwitch = () => {
         transition: { duration: 0.2 },
       }}
       whileHover={{ scale: 1.2 }}
-      onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
+      onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -32,7 +32,7 @@ const ThemeSwitch = () => {
         fill="currentColor"
         className="text-gray-900 dark:text-gray-100"
       >
-        {mounted && (theme === "dark" || resolvedTheme === "dark") ? (
+        {mounted && (theme === 'dark' || resolvedTheme === 'dark') ? (
           <BsSunFill size={16} />
         ) : (
           <BsMoonFill size={18} />

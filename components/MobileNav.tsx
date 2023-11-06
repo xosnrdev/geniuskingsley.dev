@@ -1,11 +1,11 @@
-"use client";
+'use client';
 
-import headerNavLinks from "@/data/headerNavLinks";
-import classNames from "classnames";
-import { AnimatePresence, motion } from "framer-motion";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import classNames from 'classnames';
+import headerNavLinks from 'content/headerNavLinks';
+import { AnimatePresence, motion } from 'framer-motion';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import { useEffect, useState } from 'react';
 
 export default function MobileNav() {
   const pathName = usePathname();
@@ -13,15 +13,15 @@ export default function MobileNav() {
 
   const variants = {
     enter: { opacity: 1, x: 0 },
-    exit: { opacity: 0, x: "100vw" },
+    exit: { opacity: 0, x: '100vw' },
   };
 
   useEffect(() => {
     if (navShow) {
       // Prevent scrolling
-      document.body.style.overflow = "hidden";
+      document.body.style.overflow = 'hidden';
     } else {
-      document.body.style.overflow = "auto";
+      document.body.style.overflow = 'auto';
     }
   }, [navShow]);
 
@@ -37,7 +37,7 @@ export default function MobileNav() {
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 20 20"
           fill="currentColor"
-          className="text-slate-800 dark:text-slate-200"
+          className="text-gray-900 dark:text-gray-100"
         >
           <path
             fillRule="evenodd"
@@ -50,15 +50,15 @@ export default function MobileNav() {
         <motion.div
           key="MobileNav"
           transition={{ duration: 0.6, ease: [0.43, 0.13, 0.23, 0.96] }}
-          animate={navShow ? "enter" : "exit"}
+          animate={navShow ? 'enter' : 'exit'}
           initial="exit"
           exit="exit"
           variants={variants}
           className={classNames(
-            "fixed inset-0 z-20 h-full w-full bg-white opacity-95 dark:bg-black"
+            'fixed inset-0 z-20 h-full w-full bg-white opacity-95 dark:bg-black'
           )}
         >
-          <header className="flex justify-end px-4 py-5">
+          <header className="flex justify-end py-5 px-4">
             <button
               type="button"
               aria-label="toggle modal"
@@ -85,8 +85,8 @@ export default function MobileNav() {
                 href="/"
                 onClick={() => setNavShow(!navShow)}
                 className={classNames(
-                  "horizontal-underline font-bold tracking-widest text-slate-800 backdrop:text-2xl dark:text-slate-200",
-                  { "horizontal-underline-active": pathName === "/" }
+                  'horizontal-underline font-bold tracking-widest text-gray-900 backdrop:text-2xl dark:text-gray-100',
+                  { 'horizontal-underline-active': pathName === '/' }
                 )}
               >
                 Home
@@ -101,8 +101,8 @@ export default function MobileNav() {
                     href={href}
                     onClick={() => setNavShow(!navShow)}
                     className={classNames(
-                      "horizontal-underline font-bold tracking-widest text-slate-800 backdrop:text-2xl dark:text-slate-200",
-                      { "horizontal-underline-active": active }
+                      'horizontal-underline font-bold tracking-widest text-gray-900 backdrop:text-2xl dark:text-gray-100',
+                      { 'horizontal-underline-active': active }
                     )}
                     aria-label={title}
                   >

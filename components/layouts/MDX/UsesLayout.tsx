@@ -1,5 +1,5 @@
-import Link from "next/link";
-import { ReactNode } from "react";
+import Link from 'next/link';
+import { ReactNode } from 'react';
 interface Props {
   children: ReactNode;
 }
@@ -12,7 +12,7 @@ export default function UsesLayout({ children }: Props) {
           Tools I Use
         </h1>
         <span className="text-slate-700 dark:text-slate-300">
-          Inspired by{" "}
+          Inspired by{' '}
           <Link
             href="https://wesbos.com/uses"
             className="underline-magical"
@@ -23,12 +23,12 @@ export default function UsesLayout({ children }: Props) {
           </Link>
         </span>
       </div>
-      <div className="prose max-w-none flex-wrap pb-8 font-normal text-slate-600/90 dark:prose-dark dark:text-slate-200/90 md:text-lg xl:col-span-2">
+      <div className="prose max-w-none mx-auto text-sm dark:prose-dark md:text-lg xl:col-span-2">
         {children}
         <div className="space-y-5 text-slate-600/90 dark:text-slate-200/90 lg:space-y-7">
           <div className="flex flex-wrap gap-4 md:justify-center">
-            <div style={{ overflow: "hidden" }}>
-              <div style={{ opacity: 1, transform: "none" }}>
+            <div style={{ overflow: 'hidden' }}>
+              <div style={{ opacity: 1, transform: 'none' }}>
                 <div className="flex h-20 w-20 flex-col items-center space-y-2 rounded p-3 shadow-sm dark:bg-inherit lg:h-24 lg:w-24">
                   <svg viewBox="0 0 128 128" className="h-full w-[50%]">
                     <path
@@ -49,8 +49,8 @@ export default function UsesLayout({ children }: Props) {
                 </div>
               </div>
             </div>
-            <div style={{ overflow: "hidden" }}>
-              <div style={{ opacity: 1, transform: "none" }}>
+            <div style={{ overflow: 'hidden' }}>
+              <div style={{ opacity: 1, transform: 'none' }}>
                 <div className="flex h-20 w-20 flex-col items-center space-y-2 rounded p-3 shadow-sm dark:bg-inherit lg:h-24 lg:w-24">
                   <svg viewBox="0 0 128 128" className="h-full w-[50%]">
                     <path
@@ -82,8 +82,8 @@ export default function UsesLayout({ children }: Props) {
                 </div>
               </div>
             </div>
-            <div style={{ overflow: "hidden" }}>
-              <div style={{ opacity: 1, transform: "none" }}>
+            <div style={{ overflow: 'hidden' }}>
+              <div style={{ opacity: 1, transform: 'none' }}>
                 <div className="flex h-20 w-20 flex-col items-center space-y-2 rounded p-3 shadow-sm dark:bg-inherit lg:h-24 lg:w-24">
                   <svg viewBox="0 0 128 128" className="h-full w-[50%]">
                     <path fill="#F0DB4F" d="M1.408 1.408h125.184v125.185H1.408z"></path>
@@ -96,8 +96,8 @@ export default function UsesLayout({ children }: Props) {
                 </div>
               </div>
             </div>
-            <div style={{ overflow: "hidden" }}>
-              <div style={{ opacity: 1, transform: "none" }}>
+            <div style={{ overflow: 'hidden' }}>
+              <div style={{ opacity: 1, transform: 'none' }}>
                 <div className="flex h-20 w-20 flex-col items-center space-y-2 rounded p-3 shadow-sm dark:bg-inherit lg:h-24 lg:w-24">
                   <svg viewBox="0 0 128 128" className="h-full w-[50%]">
                     <path fill="#fff" d="M22.67 47h99.67v73.67H22.67z"></path>
@@ -111,8 +111,8 @@ export default function UsesLayout({ children }: Props) {
                 </div>
               </div>
             </div>
-            <div style={{ overflow: "hidden" }}>
-              <div style={{ opacity: 1, transform: "none" }}>
+            <div style={{ overflow: 'hidden' }}>
+              <div style={{ opacity: 1, transform: 'none' }}>
                 <div className="flex h-20 w-20 flex-col items-center space-y-2 rounded p-3 shadow-sm dark:bg-inherit dark:bg-inherit lg:h-24 lg:w-24">
                   <svg viewBox="0 0 128 128" className="h-full w-[50%]">
                     <linearGradient
@@ -170,8 +170,8 @@ export default function UsesLayout({ children }: Props) {
                 </div>
               </div>
             </div>
-            <div style={{ overflow: "hidden" }}>
-              <div style={{ opacity: 1, transform: "none" }}>
+            <div style={{ overflow: 'hidden' }}>
+              <div style={{ opacity: 1, transform: 'none' }}>
                 <div className="flex h-20 w-20 flex-col items-center space-y-2 rounded p-3 shadow-sm dark:bg-inherit lg:h-24 lg:w-24">
                   <svg
                     width="800px"
@@ -194,8 +194,8 @@ export default function UsesLayout({ children }: Props) {
                 </div>
               </div>
             </div>
-            <div style={{ overflow: "hidden" }}>
-              <div style={{ opacity: 1, transform: "none" }}>
+            <div style={{ overflow: 'hidden' }}>
+              <div style={{ opacity: 1, transform: 'none' }}>
                 <div className="flex h-20 w-20 flex-col items-center space-y-2 rounded p-3 shadow-sm dark:bg-inherit lg:h-24 lg:w-24">
                   <svg viewBox="0 0 128 128" className="h-full w-[50%]">
                     <g fill="#61DAFB">
@@ -207,8 +207,8 @@ export default function UsesLayout({ children }: Props) {
                 </div>
               </div>
             </div>
-            <div style={{ overflow: "hidden" }}>
-              <div style={{ opacity: 1, transform: "none" }}>
+            <div style={{ overflow: 'hidden' }}>
+              <div style={{ opacity: 1, transform: 'none' }}>
                 <div className="flex h-20 w-20 flex-col items-center space-y-2 rounded p-3 shadow-sm dark:bg-inherit lg:h-24 lg:w-24">
                   <svg viewBox="0 0 128 128" className="h-full w-[50%]">
                     <path fill="none" d="M0 0h128v128H0z"></path>
@@ -221,8 +221,8 @@ export default function UsesLayout({ children }: Props) {
                 </div>
               </div>
             </div>
-            <div style={{ overflow: "hidden" }}>
-              <div style={{ opacity: 1, transform: "none" }}>
+            <div style={{ overflow: 'hidden' }}>
+              <div style={{ opacity: 1, transform: 'none' }}>
                 <div className="flex h-20 w-20 flex-col items-center space-y-2 rounded p-3 shadow-sm dark:bg-inherit lg:h-24 lg:w-24">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -248,8 +248,8 @@ export default function UsesLayout({ children }: Props) {
                 </div>
               </div>
             </div>
-            <div style={{ overflow: "hidden" }}>
-              <div style={{ opacity: 1, transform: "none" }}>
+            <div style={{ overflow: 'hidden' }}>
+              <div style={{ opacity: 1, transform: 'none' }}>
                 <div className="flex h-20 w-20 flex-col items-center space-y-2 rounded p-3 shadow-sm dark:bg-inherit lg:h-24 lg:w-24">
                   <svg
                     width="800px"
@@ -328,8 +328,8 @@ export default function UsesLayout({ children }: Props) {
               </div>
             </div>
 
-            <div style={{ overflow: "hidden" }}>
-              <div style={{ opacity: 1, transform: "none" }}>
+            <div style={{ overflow: 'hidden' }}>
+              <div style={{ opacity: 1, transform: 'none' }}>
                 <div className="flex h-20 w-20 flex-col items-center space-y-2 rounded p-3 shadow-sm dark:bg-inherit lg:h-24 lg:w-24">
                   <svg viewBox="0 0 128 128" className="h-full w-[50%]">
                     <path
@@ -341,8 +341,8 @@ export default function UsesLayout({ children }: Props) {
                 </div>
               </div>
             </div>
-            <div style={{ overflow: "hidden" }}>
-              <div style={{ opacity: 1, transform: "none" }}>
+            <div style={{ overflow: 'hidden' }}>
+              <div style={{ opacity: 1, transform: 'none' }}>
                 <div className="flex h-20 w-20 flex-col items-center space-y-2 rounded p-3 shadow-sm dark:bg-inherit lg:h-24 lg:w-24">
                   <svg
                     width="800px"
@@ -362,8 +362,8 @@ export default function UsesLayout({ children }: Props) {
                 </div>
               </div>
             </div>
-            <div style={{ overflow: "hidden" }}>
-              <div style={{ opacity: 1, transform: "none" }}>
+            <div style={{ overflow: 'hidden' }}>
+              <div style={{ opacity: 1, transform: 'none' }}>
                 <div className="flex h-20 w-20 flex-col items-center space-y-2 rounded p-3 shadow-sm dark:bg-inherit lg:h-24 lg:w-24">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
