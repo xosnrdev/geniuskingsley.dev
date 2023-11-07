@@ -28,10 +28,10 @@ export async function generateMetadata({
   const authors = post?.author ? [post.author] : siteMetadata.author;
 
   return {
-    title: siteMetadata.author + ' | ' + post.title,
+    title: post.title,
     description: post.summary,
     openGraph: {
-      title: siteMetadata.author + ' | ' + post.title,
+      title: post.title,
       description: post.summary,
       url: siteMetadata.siteUrl + '/blog' + post.slug,
       siteName: siteMetadata.title,
