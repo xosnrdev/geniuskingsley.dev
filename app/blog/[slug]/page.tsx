@@ -6,6 +6,7 @@ import MainLayout from '@/layouts/MainLayout';
 import { coreContent, formatBlogLink, sortedBlogPost } from '@/lib/utils/contentlayer';
 import { allBlogs } from 'contentlayer/generated';
 import { Metadata } from 'next';
+import siteMetadata from 'content/siteMetadata';
 
 export async function generateMetadata({
   params,
@@ -16,12 +17,39 @@ export async function generateMetadata({
   const post = allBlogs.find((p) => p.slug === slug);
 
   if (!post) {
-    return {};
+    return {
+      title: `%s | Not Found`,
+      description: "Sorry we couldn't find this page.",
+    };
   }
 
+  const publishedAt = new Date(post.date).toISOString();
+  const modifiedAt = new Date(post.lastmod || post.date).toISOString();
+  const authors = post?.author ? [post.author] : siteMetadata.author;
+
   return {
-    title: post.title,
+    title: siteMetadata.author + ' | ' + post.title,
     description: post.summary,
+    openGraph: {
+      title: siteMetadata.author + ' | ' + post.title,
+      description: post.summary,
+      url: siteMetadata.siteUrl + '/blog' + post.slug,
+      siteName: siteMetadata.title,
+      images: [siteMetadata.blogOpenGraph],
+      locale: 'en_US',
+      type: 'article',
+      publishedTime: publishedAt,
+      modifiedTime: modifiedAt,
+      authors: authors.length > 0 ? authors : [siteMetadata.author],
+    },
+
+    twitter: {
+      card: 'summary_large_image',
+      title: post.title,
+      description: post.summary,
+      images: [siteMetadata.blogOpenGraph],
+      creator: siteMetadata.twitterHandle,
+    },
   };
 }
 

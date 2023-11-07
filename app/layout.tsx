@@ -1,6 +1,6 @@
 import '@/css/prism.css';
 import '@/css/tailwind.css';
-import { GeistSans, GeistMono } from 'geist/font';
+import { GeistMono, GeistSans } from 'geist/font';
 
 import Analytics from '@/components/Analytics';
 import Footer from '@/components/Footer';
@@ -8,10 +8,34 @@ import Header from '@/components/Header';
 import LogRocket from '@/components/LogRocket';
 import LenisProvider from '@/components/Providers/LenisProvider';
 import ThemeProvider from '@/components/Providers/ThemeProvider';
+import siteMetadata from 'content/siteMetadata';
+import { Metadata } from 'next';
 
-export const metadata = {
-  title: 'Success Kingsley',
-  description: 'I build things for the web.',
+export const metadata: Metadata = {
+  metadataBase: new URL(siteMetadata.siteUrl),
+
+  title: {
+    default: siteMetadata.title,
+    template: `%s | ${siteMetadata.title}`,
+  },
+  description: siteMetadata.description,
+  openGraph: {
+    title: siteMetadata.title,
+    description: siteMetadata.description,
+    url: siteMetadata.siteUrl,
+    siteName: siteMetadata.title,
+    images: [siteMetadata.socialBanner],
+    locale: 'en_US',
+    type: 'website',
+  },
+
+  twitter: {
+    card: 'summary_large_image',
+    title: siteMetadata.title,
+    description: siteMetadata.description,
+    images: [siteMetadata.socialBanner],
+    creator: siteMetadata.twitterHandle,
+  },
 };
 interface RootLayoutProps {
   children: React.ReactNode;

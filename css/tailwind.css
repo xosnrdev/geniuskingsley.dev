@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  ::selection {
+    background-color: #de1d8d;
+    color: #ffffff;
+  }
+}
 .task-list-item::before {
   @apply hidden;
 }
