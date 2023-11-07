@@ -18,7 +18,7 @@ export async function generateMetadata({
 
   if (!post) {
     return {
-      title: `%s | Not Found`,
+      title: 'Not Found',
       description: "Sorry we couldn't find this page.",
     };
   }

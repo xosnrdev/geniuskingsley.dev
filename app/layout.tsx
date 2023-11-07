@@ -8,8 +8,8 @@ import Header from '@/components/Header';
 import LogRocket from '@/components/LogRocket';
 import LenisProvider from '@/components/Providers/LenisProvider';
 import ThemeProvider from '@/components/Providers/ThemeProvider';
-import siteMetadata from 'content/siteMetadata';
 import { Metadata } from 'next';
+import siteMetadata from 'content/siteMetadata';
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteMetadata.siteUrl),

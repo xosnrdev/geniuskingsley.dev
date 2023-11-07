@@ -45,9 +45,9 @@ export default function AuthorLayout({ children, content }: Props) {
         </div>
       </div>
       <p className="prose max-w-none mx-auto pb-8 text-sm dark:prose-dark md:text-lg xl:col-span-2">
-        I'm a Frontend Engineer with hands-on experience. I've improved user engagement and
-        productivity at previous roles. Skilled in React, JavaScript, and AI. I'm open to new
-        opportunities in tech. Let's connect and explore potential collaborations.
+        I'm a Frontend Engineer with 2+ years of experience. I've improved user engagement and
+        productivity at previous roles. Skilled in React, JavaScript, and Software Design Patterns.
+        I'm open to new opportunities in tech. Let's connect and explore potential collaborations.
       </p>
       <div className="prose max-w-none mx-auto text-sm dark:prose-dark md:text-lg xl:col-span-2">
         {children}
