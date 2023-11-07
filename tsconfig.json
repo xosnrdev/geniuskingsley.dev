@@ -39,6 +39,6 @@
     ".next/types/**/*.ts",
     "app/api/nowPlaying",
     "app/api/topTracks"
-  ],
+, "content/siteMetadata.js"  ],
   "exclude": ["node_modules"]
 }
