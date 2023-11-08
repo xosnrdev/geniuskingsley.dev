@@ -34,7 +34,6 @@ export default function IsMobileView({
               />
 
               <Image
-                style={{ width: 'auto', height: 'auto' }}
                 src={`/static/images/project/${src}`}
                 alt={title}
                 height={196}
