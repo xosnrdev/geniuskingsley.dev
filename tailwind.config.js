@@ -230,5 +230,6 @@ module.exports = {
     require('@tailwindcss/forms'),
     require('@tailwindcss/typography'),
     require('tailwind-scrollbar')({ nocompatible: true }),
+    require('tailwindcss-animate'),
   ],
 };
