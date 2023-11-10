@@ -1,5 +1,5 @@
 const siteMetadata = {
-  title: 'Success Kingsley | Frontend Engineer',
+  title: 'Success Kingsley',
   author: 'Success Kingsley',
   headerTitle: 'Successkingsley',
   description: 'Frontend Engineer Portfolio',

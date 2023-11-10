@@ -4,8 +4,8 @@ import MainLayout from '@/layouts/MainLayout';
 import { allAuthors } from 'contentlayer/generated';
 
 export const metadata = {
-  title: 'About - Success Kingsley',
-  description: 'About me - Success Kingsley',
+  title: 'About',
+  description: 'About me',
 };
 
 export default function About() {
