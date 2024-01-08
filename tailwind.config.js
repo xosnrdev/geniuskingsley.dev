@@ -27,8 +27,7 @@ module.exports = {
       },
       fontFamily: {
         fontFamily: {
-          sans: ['var(--font-geist-sans)', ...defaultTheme.fontFamily.sans],
-          mono: ['var(--font-geist-mono)', ...defaultTheme.fontFamily.mono],
+          sans: ['var(--font-mukta)', ...defaultTheme.fontFamily.sans],
         },
       },
       gradientColorStops: {

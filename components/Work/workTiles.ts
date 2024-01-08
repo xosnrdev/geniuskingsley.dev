@@ -14,18 +14,18 @@ export const workTiles: WorkTile[] = [
     title: `Portfolio - Projects`,
     image: {
       src: '/static/images/project/all-project.webp',
-      width: 600,
-      height: 770,
+      width: 500,
+      height: 700,
     },
   },
   {
     description: `
-    A peer-2-peer coding editor that helps developer share coding space, particularly for coding mentors and tutoring.`,
-    title: 'P2PCoder',
+    A peer-2-peer coding editor platform that helps programmers share coding space, particularly for coding mentors and tutoring.`,
+    title: 'Carai',
     image: {
       src: '/static/images/project/p2pcoder-project.webp',
-      width: 600,
-      height: 554,
+      width: 500,
+      height: 700,
     },
   },
   {
@@ -33,8 +33,8 @@ export const workTiles: WorkTile[] = [
     title: 'ThreeJS Shirt Customizer',
     image: {
       src: '/static/images/project/threejs-project.webp',
-      width: 600,
-      height: 717,
+      width: 500,
+      height: 700,
     },
   },
   {
@@ -42,8 +42,8 @@ export const workTiles: WorkTile[] = [
     title: 'Annon Chat',
     image: {
       src: '/static/images/project/annon-project.webp',
-      width: 600,
-      height: 717,
+      width: 500,
+      height: 700,
     },
   },
 ];

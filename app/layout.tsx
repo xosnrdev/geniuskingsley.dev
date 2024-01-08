@@ -1,6 +1,6 @@
 import '@/css/prism.css';
 import '@/css/tailwind.css';
-import { GeistMono, GeistSans } from 'geist/font';
+import { Mukta } from 'next/font/google';
 
 import Analytics from '@/components/Analytics';
 import Footer from '@/components/Footer';
@@ -37,17 +37,19 @@ export const metadata: Metadata = {
     creator: siteMetadata.twitterHandle,
   },
 };
+
+const mukta = Mukta({
+  weight: ['200', '300', '400', '500', '600', '700', '800'],
+  subsets: ['latin'],
+});
+
 interface RootLayoutProps {
   children: React.ReactNode;
 }
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html
-      lang="en"
-      className={`${GeistSans.variable} ${GeistMono.variable}`}
-      suppressHydrationWarning
-    >
+    <html lang="en" className={mukta.className}>
       <head>
         <link rel="apple-touch-icon" sizes="76x76" href="/static/favicons/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/static/favicons/favicon.ico" />

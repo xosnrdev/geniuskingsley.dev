@@ -45,9 +45,24 @@ export default function AuthorLayout({ children, content }: Props) {
         </div>
       </div>
       <p className="prose max-w-none mx-auto pb-8 text-sm dark:prose-dark md:text-lg xl:col-span-2">
-        I'm a Frontend Engineer with 2+ years of experience. I've improved user engagement and
-        productivity at previous roles. Skilled in React, JavaScript, and Software Design Patterns.
-        I'm open to new opportunities in tech. Let's connect and explore potential collaborations.
+        Hello, I'm Success Kingsley, a dedicated Software Developer with a passion for web
+        application development. I'm an active member of the Google Developer Group, where I
+        continuously learn and share knowledge about the latest trends and best practices in the
+        tech industry. My primary expertise lies in working with React, JavaScript, TypeScript, and
+        NodeJS. I've contributed to a variety of projects, ranging from open source to personal
+        initiatives. In these projects, my responsibilities have spanned enhancing user interfaces
+        and experiences, building core functionalities for web applications, and writing
+        comprehensive tests to ensure code quality and reliability. I'm well-versed in Agile
+        methodologies and understand the value of iterative development. I appreciate how tasks and
+        functionalities must be assigned in sprints to meet deadlines effectively. This approach
+        promotes flexibility, fosters a team-based attitude, and ensures that the final product
+        aligns with the client's requirements. In addition to my technical skills, I bring a strong
+        commitment to clear and effective communication. I ensure that all stakeholders are kept
+        informed about project progress and any issues that arise. I believe in creating a positive
+        and inclusive work environment where everyone's contributions are valued. I'm always on the
+        lookout for new challenges and opportunities to further hone my skills and make a positive
+        impact in the field of software development. For me, it's not just about writing code, but
+        about building solutions that make a difference.
       </p>
       <div className="prose max-w-none mx-auto text-sm dark:prose-dark md:text-lg xl:col-span-2">
         {children}
