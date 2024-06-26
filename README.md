@@ -1,6 +1,6 @@
 # geniuskingsley.dev
 
-This is a personal portfolio website built with Next.js and MDX. It includes a blog where I write about various topics such as web development, productivity, and personal growth.
+This is my personal website built with Next.js and MDX. It includes a blog where I write about various topics such as web development, productivity, and personal growth.
 
 ## Table of Contents
 
@@ -27,13 +27,13 @@ You will need the following tools installed on your machine:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/xosnrdev/blog-portfolio.git
+git clone https://github.com/xosnrdev/geniuskingsley.dev.git
 ```
 
 2. Change directory into the project:
 
 ```bash
-cd blog-portfolio
+cd geniuskingsley.dev
 ```
 
 3. Install the dependencies:
