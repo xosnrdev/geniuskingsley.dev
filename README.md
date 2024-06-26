@@ -1,4 +1,4 @@
-# Blog-Portfolio
+# geniuskingsley.dev
 
 This is a personal portfolio website built with Next.js and MDX. It includes a blog where I write about various topics such as web development, productivity, and personal growth.
 
